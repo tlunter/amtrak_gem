@@ -1,0 +1,2 @@
+Lint/AssignmentInCondition:
+  Enabled: false
