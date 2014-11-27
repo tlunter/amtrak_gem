@@ -3,6 +3,9 @@ require 'nokogiri'
 module Amtrak
   # Will take in an HTML document as a string and parse out the train schedule
   class TrainParser
+    # Error raised when the parser runs into an issue
+    class ParserError < Amtrak::Error; end
+
     def self.parse(text)
       new(text).parse
     end
@@ -26,6 +29,8 @@ module Amtrak
       end
 
       trains
+    rescue Nokogiri::SyntaxError => ex
+      raise Amtrak::ParserError, "#{ex.class} #{ex.message}"
     end
 
     def train_nodes

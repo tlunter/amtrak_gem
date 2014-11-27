@@ -4,6 +4,8 @@ require 'date'
 module Amtrak
   # Service for getting train time HTML page from the Amtrak website
   class TrainService
+    class ServiceError < Amtrak::Error; end
+
     def self.get(*args)
       new(*args).get
     end
@@ -20,8 +22,11 @@ module Amtrak
       Excon.post(
         'http://tickets.amtrak.com/itd/amtrak',
         headers: headers,
-        body: URI.encode_www_form(body)
-      )
+        body: URI.encode_www_form(body),
+        expects: [200]
+      ).body
+    rescue Excon::Errors::ClientError, Excon::Errors::ServerError => ex
+      raise ServiceError, "#{ex.class} #{ex.message}"
     end
 
     def headers

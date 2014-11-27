@@ -7,9 +7,9 @@ describe Amtrak::TrainService do
     end
 
     it 'does the same as #get' do
-      expect(output.body).to include('route_num')
-      expect(output.body).to include('scheduled')
-      expect(output.body).to include('act_est')
+      expect(output).to include('route_num')
+      expect(output).to include('scheduled')
+      expect(output).to include('act_est')
     end
   end
 
@@ -22,9 +22,9 @@ describe Amtrak::TrainService do
       let(:output) { subject.get }
 
       it 'includes various classes' do
-        expect(output.body).to include('route_num')
-        expect(output.body).to include('scheduled')
-        expect(output.body).to include('act_est')
+        expect(output).to include('route_num')
+        expect(output).to include('scheduled')
+        expect(output).to include('act_est')
       end
     end
 
@@ -36,10 +36,10 @@ describe Amtrak::TrainService do
       let(:output) { subject.get }
 
       it 'does not include various classes and includes an error' do
-        expect(output.body).to_not include('route_num')
-        expect(output.body).to_not include('scheduled')
-        expect(output.body).to_not include('act_est')
-        expect(output.body).to include('Problem with Train Status Date')
+        expect(output).to_not include('route_num')
+        expect(output).to_not include('scheduled')
+        expect(output).to_not include('act_est')
+        expect(output).to include('Problem with Train Status Date')
       end
     end
 
@@ -51,10 +51,10 @@ describe Amtrak::TrainService do
       let(:output) { subject.get }
 
       it 'does not include various classes and includes an error' do
-        expect(output.body).to_not include('route_num')
-        expect(output.body).to_not include('scheduled')
-        expect(output.body).to_not include('act_est')
-        expect(output.body).to include(
+        expect(output).to_not include('route_num')
+        expect(output).to_not include('scheduled')
+        expect(output).to_not include('act_est')
+        expect(output).to include(
           'Problem with Departure Station or City Name'
         )
       end
