@@ -5,7 +5,7 @@ http_interactions:
     uri: http://tickets.amtrak.com/itd/amtrak
     body:
       encoding: US-ASCII
-      string: _handler%3Damtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler%2F_xpath%3D%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D=&%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FdepartDate.date=Thu%2C+Nov+13%2C+2014&requestor=amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler&xwdf_trainNumber=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FsegmentRequirements%5B1%5D%2FserviceCode&wdf_trainNumber=optional&xwdf_SortBy=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FdepartDate%2F%40radioSelect&wdf_SortBy=arrivalTime&xwdf_origin=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtravelSelection%2FjourneySelection%5B1%5D%2FdepartLocation%2Fsearch&wdf_origin=pvd&xwdf_destination=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtravelSelection%2FjourneySelection%5B1%5D%2FarriveLocation%2Fsearch&wdf_destination=bby
+      string: _handler%3Damtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler%2F_xpath%3D%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D=&%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FdepartDate.date=Thu%2C+Nov+27%2C+2014&requestor=amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler&xwdf_trainNumber=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FsegmentRequirements%5B1%5D%2FserviceCode&wdf_trainNumber=optional&xwdf_SortBy=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FdepartDate%2F%40radioSelect&wdf_SortBy=arrivalTime&xwdf_origin=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtravelSelection%2FjourneySelection%5B1%5D%2FdepartLocation%2Fsearch&wdf_origin=pvd&xwdf_destination=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtravelSelection%2FjourneySelection%5B1%5D%2FarriveLocation%2Fsearch&wdf_destination=bby
     headers:
       Content-Type:
       - application/x-www-form-urlencoded
@@ -15,14 +15,14 @@ http_interactions:
       message: 
     headers:
       Content-Length:
-      - '94486'
+      - '94111'
       Content-Type:
       - text/html;charset=UTF-8
       Set-Cookie:
-      - JSESSIONID=0000zN9tfDMlaSnFh_3gwOQ53YA:187j66ths; HTTPOnly; Path=/; Domain=.amtrak.com;
-        HttpOnly, TS81804f=9dafe867b8128eb3937101a0d433737820536d61d1993d4e546437cb60ac0ec514df8871;
-        path=/; domain=.amtrak.com, TS3f5eae=06027fe6477d9899cb86e02ce997a7b220536d61d1993d4e546437cb;
-        Path=/
+      - _op_aixPageId=a2_825db53a-3194-415d-92dc-0458a9151150; Path=/, TS81804f=f21cda3d75677f27d93abd7abc6525a784b025fcf789e7715478cbc560ac0ec526226476;
+        path=/; domain=.amtrak.com, TS3f5eae=2ad58b813c21029120bc6788313a011184b025fcf789e7715478cbc55f2a2d3eb824e863;
+        Path=/, JSESSIONID=00009fZzm7_XNmL0f2aQobz8X69:187j5pbig; HTTPOnly; Path=/;
+        Domain=.amtrak.com; HttpOnly
       X-powered-by:
       - Servlet/3.0
       Expires:
@@ -31,8 +31,10 @@ http_interactions:
       - en-US
       X-frame-options:
       - SAMEORIGIN
+      X-opnet-transaction-trace:
+      - a2_825db53a-3194-415d-92dc-0458a9151150
       Date:
-      - Thu, 13 Nov 2014 04:47:10 GMT
+      - Fri, 28 Nov 2014 19:23:53 GMT
       Connection:
       - keep-alive
     body:
@@ -230,7 +232,7 @@ http_interactions:
         id=\"tickets_dep_date_time\" class=\"level5\">\r\n<div class=\"ff_date_wrapper\">\r\n<label
         for=\"tickets_dep_date\">Departs</label>\r\n\r\n\r\n<input class=\"wdfDate\"
         type=\"text\" size=\"22\" id=\"wdfdate1\" maxlength=\"22\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
-        value=\"Thu, Nov 13, 2014\" readonly=\"readonly\" /></div><div class=\"ff_time_wrapper\"><label
+        value=\"Thu, Nov 27, 2014\" readonly=\"readonly\" /></div><div class=\"ff_time_wrapper\"><label
         for=\"wdftime1\"><b>Time</b></label><select onfocus=\"updateTimeState()\"
         onchange=\"timeChanged(1);updateDayDropDownListTrainStatusWithOffsets()\"
         id=\"wdftime1\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departTime.hourmin\"><option
@@ -455,7 +457,7 @@ http_interactions:
         class=\"ff_date_wrapper\">\r\n<label for=\"wdfdate15\">Departs</label>\r\n\r\n\r\n<input
         class=\"wdfDate\" type=\"text\" size=\"22\" id=\"wdfdate15\" maxlength=\"22\"
         name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
-        value=\"Thu, Nov 13, 2014\" readonly=\"readonly\" /></div><div class=\"ff_time_wrapper\"><label
+        value=\"Thu, Nov 27, 2014\" readonly=\"readonly\" /></div><div class=\"ff_time_wrapper\"><label
         for=\"wdftimenull\"><b>Time</b></label><select onfocus=\"updateTimeState()\"
         onchange=\"timeChanged(15);updateDayDropDownListTrainStatusWithOffsets()\"
         id=\"wdftime15\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departTime.hourmin\"><option
@@ -517,7 +519,7 @@ http_interactions:
         for=\"status_date\">\r\nDate:\r\n</label>\r\n<span class=\"form_entry\">\r\n\r\n\r\n<input
         class=\"wdfDate\" type=\"text\" size=\"22\" id=\"wdfdate10\" maxlength=\"22\"
         name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
-        value=\"Thu, Nov 13, 2014\" readonly=\"readonly\" />\r\n\r\n</span>\r\n</div>\r\n<div
+        value=\"Thu, Nov 27, 2014\" readonly=\"readonly\" />\r\n\r\n</span>\r\n</div>\r\n<div
         class=\"form_line_wrapper\">\r\n<label for=\"status_train_num\">\r\nTrain
         No.\r\n</label>\r\n<span class=\"form_entry\">\r\n<input type=\"hidden\" name=\"xwdf_trainNumber\"
         value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/segmentRequirements[1]/serviceCode\"
@@ -600,7 +602,7 @@ http_interactions:
         class=\"ff_date_wrapper\">\r\n<label for=\"schedules_dep_date\">Depart</label>\r\n\r\n\r\n<input
         class=\"wdfDate\" type=\"text\" size=\"22\" id=\"wdfdate5\" maxlength=\"22\"
         name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
-        value=\"Thu, Nov 13, 2014\" readonly=\"readonly\" /></div><div class=\"ff_time_wrapper\"><label
+        value=\"Thu, Nov 27, 2014\" readonly=\"readonly\" /></div><div class=\"ff_time_wrapper\"><label
         for=\"wdftimenull\"><b>Time</b></label><select onfocus=\"updateTimeState()\"
         onchange=\"timeChanged(5);updateDayDropDownListTrainStatusWithOffsets()\"
         id=\"wdftime5\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departTime.hourmin\"><option
@@ -795,7 +797,7 @@ http_interactions:
         {\r\nbackground-color:#EEE;\r\n}\r\n</style>\r\n<script language=\"JavaScript\"
         type=\"text/javascript\" src=\"/itd/project/scripts/en/amtrak/basic_pagination_trainstatus.js\"></script>\r\n<script
         type=\"text/javascript\">\r\nvar pageDisplay = '10';\r\nvar currentPage =
-        0;\r\nvar availabilityLength = '19';\r\nvar statusResult;\r\nElement.observe(window,
+        0;\r\nvar availabilityLength = '15';\r\nvar statusResult;\r\nElement.observe(window,
         'load', function(){\r\nshow_ff_tab('status');\r\npageFilterDisplay(availabilityLength);\r\n});\r\n</script>\r\n\r\n<div
         id=\"loadingtrain\" style=\"display:none\">Loading...</div>\r\n<div id=\"loadingfailed\"
         style=\"display: none\">We're sorry, we're unable to process your request.<img
@@ -828,211 +830,208 @@ http_interactions:
         mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
         class=\"time\">11:37 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Wed Nov 12, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">11:41 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Wed Nov 26, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">12:16 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
         nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
-        \ 4 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
+        \ 39 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
         class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
         scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
         -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
         class=\"time\">12:24 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">(12:21 am)</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\nEstimated Arrival
-        Time:  3 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">12:54 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\nArrived:
+        \ 33 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
         class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
         class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
+        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">1136</div>\r\n<div
+        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
+        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
+        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
+        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
+        class=\"time\">12:33 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
+        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
+        departure time is 12:33 am. Presently, no further information is available.
+        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
+        class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
+        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
+        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
+        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
+        class=\"time\">1:15 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
+        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
+        arrival time is 1:15 am. Presently, no further information is available. Please
+        check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
+        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
+        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
         scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">66</div>\r\n<div
         class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
         class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
         mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
         class=\"time\">6:56 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">(6:56 am)</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\nEstimated Departure
-        Time:  on time.<br/>\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr class=\"status_result
-        arrives greybackground\">\r\n\r\n<th class=\"vector\" scope=\"row\">\r\nTo\r\n</th>\r\n<td
-        class=\"city\">\r\n<!-- mp_trans_disable_start -->Boston, MA -<br> Back Bay
-        (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
+        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
+        departure time is 6:56 am. Presently, no further information is available.
+        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
+        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
+        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
+        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
         class=\"time\">7:53 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">(7:37 am)</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\nEstimated Arrival
-        Time:  16 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2190</div>\r\n<div
-        class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">9:11 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
         class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        departure time is 9:11 am. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">9:59 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        arrival time is 9:59 am. Presently, no further information is available. Please
+        arrival time is 7:53 am. Presently, no further information is available. Please
         check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
         class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
         class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">190</div>\r\n<div
+        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">150</div>\r\n<div
         class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
         class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
         mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">10:17 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        departure time is 10:17 am. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
+        class=\"time\">10:25 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">10:42 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
+        \ 17 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
         class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
         scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
         -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">10:59 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        arrival time is 10:59 am. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
+        class=\"time\">11:09 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">11:15 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\nArrived:
+        \ 7 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
         class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
         class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2150</div>\r\n<div
+        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2290</div>\r\n<div
         class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
         scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
         -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">10:46 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        departure time is 10:46 am. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
+        class=\"time\">10:57 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">11:03 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
+        \ 6 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
         class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
         scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
         -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
+        class=\"time\">11:39 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
         class=\"time\">11:34 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        arrival time is 11:34 am. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\nArrived:
+        \ 5 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
         class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
         class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">170</div>\r\n<div
+        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">160</div>\r\n<div
         class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
         class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
         mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">11:58 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        departure time is 11:58 am. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
+        class=\"time\">12:25 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">1:00 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
+        \ 35 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
         class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
         scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
         -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">12:39 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        arrival time is 12:39 pm. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2154</div>\r\n<div
-        class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">12:48 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        departure time is 12:48 pm. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
+        class=\"time\">1:10 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
         class=\"time\">1:34 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        arrival time is 1:34 pm. Presently, no further information is available. Please
-        check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">172</div>\r\n<div
-        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
-        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">2:23 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        departure time is 2:23 pm. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">3:09 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        arrival time is 3:09 pm. Presently, no further information is available. Please
-        check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\nArrived:
+        \ 24 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
         class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
         class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2158</div>\r\n<div
+        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2240</div>\r\n<div
         class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
         scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
         -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">2:47 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        departure time is 2:47 pm. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
+        class=\"time\">1:24 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">1:26 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
+        \ 2 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
         class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
         scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
         -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">3:36 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        arrival time is 3:36 pm. Presently, no further information is available. Please
-        check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
+        class=\"time\">2:06 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">1:57 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\nArrived:
+        \ 9 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
         class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
         class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">86</div>\r\n<div
+        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">162</div>\r\n<div
         class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
         class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
         mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">3:47 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        departure time is 3:47 pm. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
+        class=\"time\">1:28 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">1:47 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
+        \ 19 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
         class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
         scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
         -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
         mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">4:28 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 13, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        arrival time is 4:28 pm. Presently, no further information is available. Please
-        check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n\r\n</table>\r\n</div>\r\n<div
+        class=\"time\">2:13 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">2:21 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\nArrived:
+        \ 10 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
+        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
+        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
+        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2242</div>\r\n<div
+        class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
+        scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
+        -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
+        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
+        class=\"time\">1:59 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">2:19 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
+        \ 20 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
+        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
+        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
+        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
+        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
+        class=\"time\">2:41 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">2:47 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\nArrived:
+        \ 6 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
+        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
+        class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
+        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2250</div>\r\n<div
+        class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
+        scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
+        -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
+        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
+        class=\"time\">2:58 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">3:08 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
+        \ 10 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
+        class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
+        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
+        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
+        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
+        class=\"time\">3:41 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
+        class=\"time\">3:39 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
+        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\nArrived:
+        \ 2 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n\r\n</table>\r\n</div>\r\n<div
         class=\"top_left\"></div><div class=\"top_right\"></div>\r\n\r\n<div id=\"pagination_bar\">\r\n<div
         id=\"pagination_data\"></div>\r\n<div id=\"pagination_nav\">\r\n</div>\r\n<!--
         Here's another place that can be made both cool and accessible.  -->\r\n<!--The
@@ -1043,10 +1042,10 @@ http_interactions:
         the link's class will change it to the \"non-link\" look and hover behavior.
         - James, IT WORKS!-->\r\n<br class=\"clear_both\" />\r\n</div>\r\n<hr class=\"after_pagination_bar\"
         />\r\n\r\n<br class=\"clear_both\" />\r\n</div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<meta
-        name=\"WT.cg_s\" content=\"status\" />\r\n\n<meta name=\"DCSext.NBR\" content=\"preencoded:178;66;2190;190;2150;170;2154;172;2158;86\"
+        name=\"WT.cg_s\" content=\"status\" />\r\n\n<meta name=\"DCSext.NBR\" content=\"preencoded:178;1136;66;150;2290;160;2240;162;2242;2250\"
         />\n<meta name=\"DCSext.ORG\" content=\"PVD\" />\n<meta name=\"DCSext.DST\"
-        content=\"BBY\" />\n<meta name=\"DCSext.DDT\" content=\"2014/11/12\" />\n<meta
-        name=\"DCSext.ADT\" content=\"2014/11/13\" />\n\r\n\r\n\r\n</form>\r\n</div>\r\n<br
+        content=\"BBY\" />\n<meta name=\"DCSext.DDT\" content=\"2014/11/26\" />\n<meta
+        name=\"DCSext.ADT\" content=\"2014/11/27\" />\n\r\n\r\n\r\n</form>\r\n</div>\r\n<br
         class=\"clear_both\" />\r\n</div>\r\n</div>\r\n</div>\r\n\r\n\r\n<script language=\"JavaScript\">\r\n<!--\r\nfunction
         getProfileStr(){\r\nreturn 'amtrak';\r\n}\r\ndocument.write('<meta name=\"DCSext.PROFILE\"
         content=\"'+getProfileStr()+'\" />');\r\n// -->\r\n</script>\r\n<meta name=\"WT.cg_n\"
@@ -1073,5 +1072,5 @@ http_interactions:
         src='https://askjulie.amtrak.com/ui/includes/NIT.Embed.js' id=\"agentScript\"></script><!--
         mp_trans_remove_end -->\r\n</body>\r\n</html>\r\n"
     http_version: 
-  recorded_at: Thu, 13 Nov 2014 04:47:11 GMT
-recorded_with: VCR 2.9.2
+  recorded_at: Fri, 28 Nov 2014 19:23:52 GMT
+recorded_with: VCR 2.9.3
