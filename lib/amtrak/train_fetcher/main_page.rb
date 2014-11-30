@@ -2,10 +2,9 @@ require 'excon'
 require 'date'
 
 module Amtrak
-  # Service for getting train time HTML page from the Amtrak website
   class TrainFetcher
+    # Service for getting train time results/cookies from the Amtrak website
     class MainPage
-
       attr_reader :from, :to
 
       def initialize(from, to, date: nil)
@@ -60,7 +59,7 @@ module Amtrak
       end
 
       def total_pages
-        (Float(extract_listing_length)/10).ceil
+        (Float(extract_listing_length) / 10).ceil
       end
 
       def extract_listing_length

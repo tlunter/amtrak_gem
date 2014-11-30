@@ -78,9 +78,9 @@ describe Amtrak::TrainParser do
   describe '.parse' do
     let(:parser) { double(Amtrak::TrainParser) }
     it 'calls new and parse' do
-      expect(described_class).to receive(:new).with("") { parser }
+      expect(described_class).to receive(:new).with('') { parser }
       expect(parser).to receive(:parse)
-      described_class.parse("")
+      described_class.parse('')
     end
   end
 
@@ -220,7 +220,7 @@ describe Amtrak::TrainParser do
       context 'with an error' do
         it 'raises a TrainParser::Error' do
           expect(subject.document).to receive(:search) {
-            raise Nokogiri::SyntaxError
+            fail Nokogiri::SyntaxError
           }
           expect { output }.to raise_error(Amtrak::TrainParser::Error)
         end

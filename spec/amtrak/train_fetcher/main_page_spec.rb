@@ -62,12 +62,12 @@ describe Amtrak::TrainFetcher::MainPage do
       subject { described_class.new('', '') }
 
       it 'returns a TrainFetcher::Error' do
-        expect(Excon).to receive(:post) { raise Excon::Errors::ClientError, "" }
+        expect(Excon).to receive(:post) { fail Excon::Errors::ClientError, '' }
         expect { subject.page }.to raise_error(Amtrak::TrainFetcher::Error)
       end
 
       it 'returns a TrainFetcher::Error' do
-        expect(Excon).to receive(:post) { raise Excon::Errors::ServerError, "" }
+        expect(Excon).to receive(:post) { fail Excon::Errors::ServerError, '' }
         expect { subject.page }.to raise_error(Amtrak::TrainFetcher::Error)
       end
     end

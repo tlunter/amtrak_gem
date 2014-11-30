@@ -2,6 +2,7 @@ require 'excon'
 
 module Amtrak
   class TrainFetcher
+    # Service for getting per page train time HTML from the Amtrak website
     class TrainPage
       def self.get(*args)
         new(*args).get

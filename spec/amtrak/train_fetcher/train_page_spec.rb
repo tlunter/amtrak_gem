@@ -21,14 +21,14 @@ describe Amtrak::TrainFetcher::TrainPage do
 
       it 'reraises as a TrainFetcher::Error' do
         expect(Excon).to receive(:get) {
-          raise Excon::Errors::ClientError, ''
+          fail Excon::Errors::ClientError, ''
         }
         expect { subject }.to raise_error(Amtrak::TrainFetcher::Error)
       end
 
       it 'reraises as a TrainFetcher::Error' do
         expect(Excon).to receive(:get) {
-          raise Excon::Errors::ServerError, ''
+          fail Excon::Errors::ServerError, ''
         }
         expect { subject }.to raise_error(Amtrak::TrainFetcher::Error)
       end
