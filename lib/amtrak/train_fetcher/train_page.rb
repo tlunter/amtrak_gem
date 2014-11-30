@@ -25,7 +25,7 @@ module Amtrak
           query: query
         )
       rescue Excon::Errors::ClientError, Excon::Errors::ServerError => ex
-        raise FetcherError, "#{ex.class} #{ex.message}"
+        raise Amtrak::TrainFetcher::Error, "#{ex.class} #{ex.message}"
       end
 
       def headers

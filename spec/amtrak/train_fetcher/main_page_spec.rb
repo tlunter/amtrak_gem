@@ -56,4 +56,20 @@ describe Amtrak::TrainFetcher::MainPage do
       expect(subject.session_id).to eq('0000kOxPFtO4mDoSiIGk2yzvAz6:187j4dq9a')
     end
   end
+
+  describe '#page' do
+    context 'when Excon raises' do
+      subject { described_class.new('', '') }
+
+      it 'returns a TrainFetcher::Error' do
+        expect(Excon).to receive(:post) { raise Excon::Errors::ClientError, "" }
+        expect { subject.page }.to raise_error(Amtrak::TrainFetcher::Error)
+      end
+
+      it 'returns a TrainFetcher::Error' do
+        expect(Excon).to receive(:post) { raise Excon::Errors::ServerError, "" }
+        expect { subject.page }.to raise_error(Amtrak::TrainFetcher::Error)
+      end
+    end
+  end
 end

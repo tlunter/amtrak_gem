@@ -6,7 +6,7 @@ module Amtrak
   class TrainFetcher
     class MainPage
 
-      attr_reader :from, :to, :page
+      attr_reader :from, :to
 
       def initialize(from, to, date: nil)
         @from = from
@@ -22,7 +22,7 @@ module Amtrak
           expects: [200]
         )
       rescue Excon::Errors::ClientError, Excon::Errors::ServerError => ex
-        raise FetcherError, "#{ex.class} #{ex.message}"
+        raise Amtrak::TrainFetcher::Error, "#{ex.class} #{ex.message}"
       end
 
       def headers

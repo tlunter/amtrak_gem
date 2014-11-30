@@ -1,7 +1,7 @@
 module Amtrak
   # Service for getting train time HTML page from the Amtrak website
   class TrainFetcher
-    class FetcherError < Amtrak::Error; end
+    class Error < Amtrak::Error; end
 
     def self.get(*args)
       new(*args).get
