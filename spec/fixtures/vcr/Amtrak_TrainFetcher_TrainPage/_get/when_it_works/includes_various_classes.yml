@@ -8,18 +8,19 @@ http_interactions:
       string: ''
     headers:
       Cookie:
-      - JSESSIONID=0000ITjAiGUWm-mBBpAyeGZ43Rv:187j4ddrq
+      - JSESSIONID=0000faPsyYZwp2n8Wb_4BDhukyg:187j59p07
   response:
     status:
       code: 200
       message: 
     headers:
       Content-Length:
-      - '19020'
+      - '12911'
       Content-Type:
       - text/html;charset=UTF-8
       Set-Cookie:
-      - TS3f5eae=2750936e9044a3889e216922572f4d30ce35612c583388345478d0df; Path=/
+      - _op_aixPageId=a2_daea0c65-28d7-4592-a89c-0775764abc46; Path=/, TS3f5eae=e40a68dc3507c8b74d0bc282fcc76cc4351b05b690745ca15484ab855f2a2d3e5c4d6bec;
+        Path=/
       X-powered-by:
       - Servlet/3.0
       Content-Language:
@@ -28,220 +29,170 @@ http_interactions:
       - SAMEORIGIN
       Expires:
       - Tue, 01 Jul 2003, 00:00:00 GMT
+      X-opnet-transaction-trace:
+      - a2_daea0c65-28d7-4592-a89c-0775764abc46
       Date:
-      - Fri, 28 Nov 2014 19:45:36 GMT
+      - Sun, 07 Dec 2014 19:33:27 GMT
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: "\r\n\r\n\r\n<table id=\"status_results\" cellspacing=\"0\" >\r\n<thead>\r\n<tr>\r\n<th
-        class=\"service\" scope=\"col\">Service</th>\r\n<th class=\"vector\" scope=\"col\">&nbsp;</th>\r\n<th
-        class=\"city\" scope=\"col\">City</th>\r\n<th class=\"scheduled\" scope=\"col\">Scheduled</th>\r\n<th
-        class=\"act_est\" scope=\"col\">Actual /<br>Estimate</th>\r\n<th class=\"status\"
-        scope=\"col\">Status</th>\r\n</tr>\r\n<tr class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n</thead>\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">172</div>\r\n<div
-        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
-        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">2:23 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">2:36 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
-        \ 13 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">3:09 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">3:07 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\nEstimated Arrival
-        Time:  2 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2158</div>\r\n<div
-        class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">2:54 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">3:02 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\nEstimated Departure
-        Time:  8 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">3:36 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">3:39 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\nEstimated Arrival
-        Time:  3 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">86</div>\r\n<div
-        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
-        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">3:47 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">3:48 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\nEstimated Departure
-        Time:  1 minute late.<br/>\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">4:28 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">4:17 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\nEstimated Arrival
-        Time:  11 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">174</div>\r\n<div
-        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
-        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">5:30 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">5:31 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\nEstimated Departure
-        Time:  1 minute late.<br/>\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">6:25 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">6:00 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\nEstimated Arrival
-        Time:  25 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2164</div>\r\n<div
-        class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">5:50 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">5:51 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\nEstimated Departure
-        Time:  1 minute late.<br/>\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">6:34 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">6:28 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\nEstimated Arrival
-        Time:  6 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">176</div>\r\n<div
-        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
-        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">7:19 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">7:25 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\nEstimated Departure
-        Time:  6 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">8:06 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">7:54 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\nEstimated Arrival
-        Time:  12 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2168</div>\r\n<div
-        class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">7:56 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">7:57 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\nEstimated Departure
-        Time:  1 minute late.<br/>\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">8:38 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">8:34 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\nEstimated Arrival
-        Time:  4 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">94</div>\r\n<div
-        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
-        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">9:16 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">9:17 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\nEstimated Departure
-        Time:  1 minute late.<br/>\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">10:02 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n<div
-        class=\"time\">9:46 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n<I>(estimated)</I>\r\n\r\n\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\nEstimated Arrival
-        Time:  16 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2172</div>\r\n<div
-        class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">9:54 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        departure time is 9:54 pm. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">10:35 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Fri Nov 28, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        arrival time is 10:35 pm. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n\r\n</table>\r\n\r\n"
+      string: "\r\n\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair_heading\">\r\n\r\n<div
+        id=\"resp_by_citypair_heading_left\">\r\n<div>PVD</div>\r\n<div id=\"resp_by_citypair_heading_line2\">Providence,
+        RI</div>\r\n</div>\r\n<div id=\"resp_by_citypair_heading_middle\">\r\n<img
+        alt=\"\" src=\"/images/en/station-to-station-arrow.png\" />\r\n</div>\r\n<div
+        id=\"resp_by_citypair_heading_right\">\r\n<div>BBY</div>\r\n<div id=\"resp_by_citypair_heading_line2\">Boston,
+        MA</div>\r\n</div>\r\n\r\n</div>\r\n<div id=\"train_status_spacing1\"></div>\r\n\r\n\r\n<div
+        id=\"train_status_resp_by_citypair\">\r\n<div id=\"resp_by_citypair_subheading\">\r\n<div
+        id=\"resp_by_citypair_subheading_trainname\">\r\n178&nbsp;Northeast Regional\r\n</div>\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div class=\"statusDetailsSection\">\r\n<div
+        class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div class=\"arriveDepartDelayedMsg\">
+        Departed</div>\r\n<div class=\"delayedMsg\">4 minutes late</div>\r\n\r\n<div
+        class=\"arriveDepartTime\">11:41 pm</div>\r\n<div class=\"arriveDepartDate\">Fri,
+        Dec 5 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;11:37 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/ontime-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartOntimeMsg\"> Arrived</div>\r\n<div class=\"ontimeMsg\">9
+        minutes early</div>\r\n\r\n\r\n<div class=\"arriveDepartTime\">12:15 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;12:24 am\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n66&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartOntimeMsg\"> Departed</div>\r\n<div class=\"ontimeMsg\">On
+        time</div>\r\n\r\n\r\n<div class=\"arriveDepartTime\">6:56 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;6:56 am\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">2
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">7:54 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;7:53 am\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n150&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">10
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">10:35 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;10:25 am\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">4
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">11:13 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;11:09 am\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n2290&nbsp;Acela
+        Express\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">13
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">11:10 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;10:57 am\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">10
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">11:49 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;11:39 am\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n160&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">10
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">12:35 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;12:25 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">2
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">1:10 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;1:10 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n162&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">43
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">2:11 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;1:28 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">37
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">2:48 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;2:13 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n2250&nbsp;Acela
+        Express\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">22
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">3:20 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;2:58 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">15
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">3:56 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;3:41 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n164&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"statusUnavailableMsg\">Status currently unavailable</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;4:30 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img
+        src=\"/images/en/no-status-available-origin.png\" />\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div class=\"statusDetailsSection\">\r\n<div
+        class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"statusUnavailableMsg\">Status currently unavailable</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;5:13 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n82&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">2
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">5:28 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;5:26 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/ontime-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartOntimeMsg\"> Arrived</div>\r\n<div class=\"ontimeMsg\">4
+        minutes early</div>\r\n\r\n\r\n<div class=\"arriveDepartTime\">6:04 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;6:10 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n88&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">
+        23 minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">6:50 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;6:27 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">
+        14 minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">7:28 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;7:14 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n\r\n"
     http_version: 
-  recorded_at: Fri, 28 Nov 2014 19:45:36 GMT
+  recorded_at: Sun, 07 Dec 2014 19:33:27 GMT
 recorded_with: VCR 2.9.3

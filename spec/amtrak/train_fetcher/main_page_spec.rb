@@ -34,7 +34,7 @@ describe Amtrak::TrainFetcher::MainPage do
 
   describe '#total_pages' do
     context 'when only one page exists on the website' do
-      subject { described_class.new('pvd', 'bby', date: Date.parse('2014-11-28')) }
+      subject { described_class.new('pvd', 'bby', date: Date.parse('2014-12-07')) }
 
       it 'returns 1', :vcr do
         expect(subject.total_pages).to eq(1)
@@ -42,7 +42,7 @@ describe Amtrak::TrainFetcher::MainPage do
     end
 
     context 'when more than one page exists on the website' do
-      subject { described_class.new('pvd', 'bby', date: Date.parse('2014-11-27')) }
+      subject { described_class.new('pvd', 'bby', date: Date.parse('2014-12-06')) }
 
       it 'returns 2', :vcr do
         expect(subject.total_pages).to eq(2)
@@ -51,9 +51,9 @@ describe Amtrak::TrainFetcher::MainPage do
   end
 
   describe '#session_id' do
-    subject { described_class.new('pvd', 'bby', date: Date.parse('2014-11-28')) }
+    subject { described_class.new('pvd', 'bby', date: Date.parse('2014-12-06')) }
     it 'pulls the session id from the cookies', :vcr do
-      expect(subject.session_id).to eq('0000kOxPFtO4mDoSiIGk2yzvAz6:187j4dq9a')
+      expect(subject.session_id).to eq('0000faPsyYZwp2n8Wb_4BDhukyg:187j59p07')
     end
   end
 

@@ -5,7 +5,7 @@ http_interactions:
     uri: http://tickets.amtrak.com/itd/amtrak
     body:
       encoding: US-ASCII
-      string: _handler%3Damtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler%2F_xpath%3D%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D=&%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FdepartDate.date=Thu%2C+Nov+6%2C+2014&requestor=amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler&xwdf_trainNumber=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FsegmentRequirements%5B1%5D%2FserviceCode&wdf_trainNumber=optional&xwdf_SortBy=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FdepartDate%2F%40radioSelect&wdf_SortBy=arrivalTime&xwdf_origin=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtravelSelection%2FjourneySelection%5B1%5D%2FdepartLocation%2Fsearch&wdf_origin=pvd&xwdf_destination=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtravelSelection%2FjourneySelection%5B1%5D%2FarriveLocation%2Fsearch&wdf_destination=bby
+      string: _handler%3Damtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler%2F_xpath%3D%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D=&%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FdepartDate.date=Thu%2C+Nov+6%2C+2014&%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2F%40trainStatusType=statusByCityPair&%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FdepartDate%2F%40radioSelect=arrivalTime&requestor=amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler&xwdf_origin=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtravelSelection%2FjourneySelection%5B1%5D%2FdepartLocation%2Fsearch&wdf_origin=pvd&xwdf_destination=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtravelSelection%2FjourneySelection%5B1%5D%2FarriveLocation%2Fsearch&wdf_destination=bby
     headers:
       Content-Type:
       - application/x-www-form-urlencoded
@@ -15,14 +15,14 @@ http_interactions:
       message: 
     headers:
       Content-Length:
-      - '71448'
+      - '73528'
       Content-Type:
       - text/html;charset=UTF-8
       Set-Cookie:
-      - JSESSIONID=0000cDi2rrUQdUvVtRho_Lh8SMM:187j6anp5; HTTPOnly; Path=/; Domain=.amtrak.com;
-        HttpOnly, TS81804f=d3999d1395fd1d194fd6729fc689fe9a56dbd3dd0bff6bb85478c23960ac0ec5cdae3e1d;
-        path=/; domain=.amtrak.com, TS3f5eae=4f29a5aba77ee7a9cc228703bfca5b5c56dbd3dd0bff6bb85478c239;
-        Path=/
+      - _op_aixPageId=a2_217dda95-81b8-42e2-8785-ee21c74952f4; Path=/, TS81804f=7a5bbb3497ad35d6fac8a5e17d3510a6706fa28f432855875484ac3a60ac0ec5a06a4fce;
+        path=/; domain=.amtrak.com, TS3f5eae=a5cda456f1c02b965ad373a8aade4a26706fa28f432855875484ac3a5f2a2d3e618cce86;
+        Path=/, JSESSIONID=0000Al5E3glu7r4uPdpxn3Hd7Gn:186s7879o; HTTPOnly; Path=/;
+        Domain=.amtrak.com; HttpOnly
       X-powered-by:
       - Servlet/3.0
       Expires:
@@ -31,15 +31,17 @@ http_interactions:
       - en-US
       X-frame-options:
       - SAMEORIGIN
+      X-opnet-transaction-trace:
+      - a2_217dda95-81b8-42e2-8785-ee21c74952f4
       Date:
-      - Fri, 28 Nov 2014 18:43:06 GMT
+      - Sun, 07 Dec 2014 19:36:27 GMT
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\r\n\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n\r\n<!--\r\n\"Amtrak
-        Release 6.21.03a\"\r\n-->\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\r\n<meta
-        content=\"IE=EmulateIE7\" http-equiv=\"X-UA-Compatible\" />\r\n\r\n\r\n\r\n\r\n<head
+        Release 6.22.02a\"\r\n-->\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n<meta
+        content=\"IE=edge\" http-equiv=\"X-UA-Compatible\" />\r\n\r\n\r\n\r\n<head
         ><title>Amtrak - Train Status - Details</title>\n<meta http-equiv=\"content-type\"
         content=\"text/html; charset=UTF-8\" />\n<meta name=\"robots\" content=\"noindex,nofollow\"
         />\n<meta http-equiv=\"imagetoolbar\" content=\"no\" />\n<style type=\"text/css\">\n<!--\n@import
@@ -184,23 +186,16 @@ http_interactions:
         == 'ff_status_form') {\r\naddFormSubmitEvent(forms[i]);\r\n}\r\n}\r\n});\r\n</script>\r\n<![endif]-->\r\n<!--
         Begin HTML for Fare Finder -->\r\n<div id=\"farefinder\">\r\n<div id=\"ff_tabbar\">\r\n<div
         class=\"active\" id=\"ff_tabbar_tickets\">Tickets<span onclick=\"compare_dates('wdfdate1');show_ff_tab('tickets');showHideRedeemTabBarSection('ff_sub_tabbar',
-        true);\"></span></div>\r\n<div id=\"ff_tabbar_status\">Status<span onclick=\"set_status_date('wdfdate10');show_ff_tab('status');\"></span></div>\r\n<div
+        true);\"></span></div>\r\n<div id=\"ff_tabbar_status\">Status<span onclick=\"set_status_date('wdfdate10');set_status_date('wdfdate11');show_ff_tab('status');setDepartOrArrivalFieldVisibility();switchToStatusByTrain();\"></span></div>\r\n<div
         id=\"ff_tabbar_schedules\">Schedules<span onclick=\"compare_dates('wdfdate5');show_ff_tab('schedules');\"></span></div>\r\n<div
         id=\"ff_tabbar_mytrip\">My Trip<span onclick=\"show_ff_tab('mytrip');\"></span></div>\r\n</div>\r\n\r\n\r\n\r\n\r\n<div
         id=\"ff_sub_tabbar\" class=\"show_section\">\r\n<div class=\"active\" id=\"ff_sub_tabbar_bookatrip\">Book<span
         onclick=\"show_ff_sub_tab('bookatrip');\"></span></div>\r\n<div id=\"ff_sub_tabbar_redeem\">Redeem<span
         onclick=\"show_ff_sub_tab('redeem');\"></span></div>\r\n<div id=\"ff_sub_tabbar_traveloptions\">Travel
         Options<span onclick=\"show_ff_sub_tab('traveloptions');\"></span></div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
-        id=\"farefinder_tabbody_tickets\" class=\"farefinder_tabbody ff_active\">\r\n<div
-        id=\"ada_link\" class=\"subdiv\" >\r\n<label for=\"ff_ada_link\" ><a href=\"javascript:show_adainfo(this)\"
-        onclick=\"javascript:show_adainfo(this)\" >Passengers with a Disability</a></label>\r\n<div
-        id=\"ada_linktext\" class=\"ada_linktext\">\r\n<a class=\"button ada_infoclose\"
-        href=\"javascript:close_adainfo();\"><img src=\"/images/en/btn_closeWindow.png\"
-        alt=\"Close\" /></a>\r\n<p>To make a reservation for a passenger with a disability,
-        select Passenger with Disability (PWD) from the passenger type selection menu
-        \ below.</p>\r\n</div>\r\n<span id=\"ada_linktext_before\" ></span>\r\n<span
-        id=\"ada_linktext_after\" ></span>\r\n</div>\r\n<form name=\"form\" action=\"http://tickets.amtrak.com/itd/amtrak\"
-        method=\"post\"><input type=\"hidden\" name=\"requestor\" value=\"amtrak.presentation.handler.page.rail.AmtrakRailFareFinderPageHandler\"
+        id=\"farefinder_tabbody_tickets\" class=\"farefinder_tabbody ff_active\">\r\n<form
+        name=\"form\" action=\"http://tickets.amtrak.com/itd/amtrak\" method=\"post\"><input
+        type=\"hidden\" name=\"requestor\" value=\"amtrak.presentation.handler.page.rail.AmtrakRailFareFinderPageHandler\"
         />\r\n<input type=\"hidden\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/@bookpath\"
         value=\"farefamilies\" />\r\n<input type=\"hidden\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/allJourneyRequirements/@ff_tab_selected\"
         value=\"bookatrip\" />\r\n<h2>Tickets</h2>\r\n\r\n<div id=\"ff_tickets_tt_cities_subdiv\"
@@ -413,15 +408,7 @@ http_interactions:
         = parseInt(document.getElementById(\"oth_seniors\").value);\r\ntadt -= 1;\r\ntsen
         += 1;\r\ndocument.getElementById(\"oth_adults\").value = tadt;\r\ndocument.getElementById(\"oth_seniors\").value
         = tsen;\r\nvar res = document.getElementById(newlabel).innerHTML.replace(\"Adult\",\"Senior\");\r\ndocument.getElementById(newlabel).innerHTML
-        =res;\r\n}\r\n}\r\n}\r\n}\r\nfunction show_adainfo(faq)\r\n{\r\nif (document.getElementById(\"ada_linktext\")
-        != undefined)\r\ndocument.getElementById(\"ada_linktext\").style.display =
-        'block';\r\ndocument.getElementById(\"ada_linktext_before\").style.display
-        = 'block';\r\ndocument.getElementById(\"ada_linktext_after\").style.display
-        = 'block';\r\n}\r\nfunction close_adainfo()\r\n{\r\nif (document.getElementById(\"ada_linktext\")
-        != undefined)\r\ndocument.getElementById(\"ada_linktext\").style.display =
-        'none';\r\ndocument.getElementById(\"ada_linktext_before\").style.display
-        = 'none';\r\ndocument.getElementById(\"ada_linktext_after\").style.display
-        = 'none';\r\n}\r\nfunction closeAlertBox() {\r\nvar $j = jQuery.noConflict();\r\n$j(\".ui-dialog-content\").dialog(\"close\");\r\n}\r\n</script>\r\n<style>\r\n.disc_passenger_select
+        =res;\r\n}\r\n}\r\n}\r\n}\r\nfunction closeAlertBox() {\r\nvar $j = jQuery.noConflict();\r\n$j(\".ui-dialog-content\").dialog(\"close\");\r\n}\r\n</script>\r\n<style>\r\n.disc_passenger_select
         {\r\nmargin-top:2px;\r\nmargin-left:0px;\r\n}\r\n</style>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
         id=\"farefinder_tabbody_redeem\" class=\"farefinder_tabbody\">\r\n<h2>Redeem
         Points</h2>\r\n<form name=\"ff_redeem_form\" action=\"https://tickets.amtrak.com/itd/amtrak\"
@@ -508,70 +495,96 @@ http_interactions:
         />\r\n<a class=\"button\" href=\"http://tickets.amtrak.com/itd/amtrak/grouptravel\">
         \r\n\r\n<img src='http://www.amtrak.com/servlet/Satellite?blobcol=urldata&blobheader=image%2Fgif&blobkey=id&blobtable=MungoBlobs&blobwhere=1249288591983&ssbinary=true'
         alt='Make a Group Travel Request'></img>\r\n\r\n</a></p>\r\n</div>\r\n</div>\r\n\r\n<div
-        id=\"farefinder_tabbody_status\" class=\"farefinder_tabbody\">\r\n\r\n<form
-        onsubmit=\"javascript:return CheckMandatoryTrainStatusFields(this)\" name=\"ff_status_form\"
-        action=\"http://tickets.amtrak.com/itd/amtrak\" method=\"post\"><input type=\"hidden\"
-        name=\"requestor\" value=\"amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler\"
-        />\r\n<h2>Status</h2>\r\n<div id=\"ff_status_step_1\" class=\"subdiv1\">\r\n<h3>Check
-        Status of a Train</h3>\r\n<div class=\"form_line_wrapper first\">\r\n<label
-        for=\"status_date\">\r\nDate:\r\n</label>\r\n<span class=\"form_entry\">\r\n\r\n\r\n<input
-        class=\"wdfDate\" type=\"text\" size=\"22\" id=\"wdfdate10\" maxlength=\"22\"
-        name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
-        value=\"Thu, Nov 6, 2014\" readonly=\"readonly\" />\r\n\r\n</span>\r\n</div>\r\n<div
-        class=\"form_line_wrapper\">\r\n<label for=\"status_train_num\">\r\nTrain
-        No.\r\n</label>\r\n<span class=\"form_entry\">\r\n<input type=\"hidden\" name=\"xwdf_trainNumber\"
-        value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/segmentRequirements[1]/serviceCode\"
-        /><input onfocus=\"if (this.value=='optional') { this.value=''; updateMaxLength();
-        };\" type=\"text\" size=\"4\" id=\"status_train_num\" maxlength=\"8\" name=\"wdf_trainNumber\"
-        value=\"optional\" />\r\n</span>\r\n</div>\r\n<br class=\"clear_both\" />\r\n</div>\r\n<div
-        id=\"ff_status_step_2\" class=\"subdiv\">\r\n<div id=\"ff_status_footnote_submit_wrapper\">\r\n<p>One
-        city is required if train number is used.</p>\r\n</div>\r\n<div id=\"status_dep_city\"
-        class=\"ff_city_wrapper\">\r\n<label for=\"status_from\">\r\nFrom\r\n</label>\r\n<!--
+        id=\"farefinder_tabbody_status\" class=\"farefinder_tabbody\">\r\n\r\n\r\n<div
+        id=\"status_by_train_number\">\r\n<form onsubmit=\"javascript:return CheckMandatoryTrainStatusFieldsForStatusByTrainNumber();\"
+        name=\"ff_status_form1\" action=\"http://tickets.amtrak.com/itd/amtrak\" method=\"post\"><input
+        type=\"hidden\" name=\"requestor\" value=\"amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler\"
+        />\r\n<input type=\"hidden\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/@trainStatusType\"
+        value=\"statusByTrainNumber\" />\r\n<h2>Status</h2>\r\n<div id=\"ff_status_step_1\"
+        class=\"subdiv1\">\r\n<div id=\"status_arr_or_dep_wrapper\">\r\n\r\n\r\n<p>\r\n<input
+        type=\"hidden\" name=\"xwdf_SortBy\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect\"
+        /><input type=\"radio\" id=\"status_arr\" name=\"wdf_SortBy\" value=\"arrivalTime\"
+        onclick=\"javascript:return setDepartOrArrivalFieldVisibility();\" checked=\"checked\"
+        />\r\n<label for=\"status_arr\">\r\nArrival Status\r\n</label>\r\n</p>\r\n<p>\r\n<input
+        type=\"hidden\" name=\"xwdf_SortBy\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect\"
+        /><input type=\"radio\" id=\"status_dep\" name=\"wdf_SortBy\" value=\"departTime\"
+        onclick=\"javascript:return setDepartOrArrivalFieldVisibility();\" />\r\n<label
+        for=\"status_dep\">\r\nDeparture Status\r\n</label>\r\n</p>\r\n\r\n\r\n\r\n\r\n</div>\r\n<div
+        id=\"status_dep_city\" class=\"ff_status_city_wrapper\">\r\n<label for=\"status_from\">\r\nStation\r\n</label>\r\n<!--
         itd:locationinput id=\"status_dep\" wdfxpath=\"travelSelection/journeySelection[1]/departLocation\"
         wdfhtmlname=\"wdf_origin\" wdflimitedlocations=\"resource:TRAVEL_USE_LIMITED_LOCATIONS\"
-        size=\"25\" / -->\r\n<input type=\"hidden\" name=\"xwdf_origin\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/departLocation/search\"
+        size=\"25\" / -->\r\n<div id=\"div_depart_station\">\r\n<input type=\"hidden\"
+        name=\"xwdf_origin\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/departLocation/search\"
         /><input type=\"text\" autocomplete=\"off\" id=\"status_from\" maxlength=\"150\"
         name=\"wdf_origin\" value=\"Providence, RI (PVD)\" />\r\n<p><span class=\"find_a_station\">\r\n<a
         title=\"Click for a list of stations.\" href=\"javascript:fieldName='status_from';
-        openStationList();\">Find a Station</a>\r\n</span></p>\r\n</div>\r\n<div id=\"status_arr_city\"
-        class=\"ff_city_wrapper\">\r\n<label for=\"status_to\">\r\nTo\r\n</label>\r\n<!--
-        itd:locationinput id=\"status_to\" wdfxpath=\"travelSelection/journeySelection[1]/arriveLocation\"
-        wdfhtmlname=\"wdf_destination\" wdflimitedlocations=\"resource:TRAVEL_USE_LIMITED_LOCATIONS\"
-        size=\"25\" / -->\r\n<input type=\"hidden\" name=\"xwdf_destination\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/arriveLocation/search\"
+        openStationList();\">Find a Station</a>\r\n</span></p>\r\n</div>\r\n<div id=\"div_arrive_station\">\r\n<input
+        type=\"hidden\" name=\"xwdf_destination\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/arriveLocation/search\"
         /><input type=\"text\" autocomplete=\"off\" id=\"status_to\" maxlength=\"150\"
         name=\"wdf_destination\" value=\"Boston - Back Bay, MA (BBY)\" />\r\n<p><span
         class=\"find_a_station\">\r\n<a title=\"Click for a list of stations.\" href=\"javascript:fieldName='status_to';
         openStationList();\">Find a Station</a>\r\n</span></p>\r\n</div>\r\n</div>\r\n<div
-        id=\"ff_status_step_3\" class=\"subdiv\">\r\n<div id=\"status_from_auto\"
-        class=\"autocomplete\" style=\"display:none\"></div>\r\n<div id=\"status_to_auto\"
-        class=\"autocomplete\" style=\"display:none\"></div>\r\n<div id=\"status_arr_or_dep_wrapper\">\r\n\r\n\r\n<input
-        type=\"hidden\" name=\"xwdf_SortBy\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect\"
-        /><input type=\"radio\" id=\"status_arr\" name=\"wdf_SortBy\" value=\"arrivalTime\"
-        checked=\"checked\" />\r\n<label for=\"status_arr\">\r\nScheduled Arrive\r\n</label>\r\n&nbsp;&nbsp;\r\n<input
-        type=\"hidden\" name=\"xwdf_SortBy\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect\"
-        /><input type=\"radio\" id=\"status_dep\" name=\"wdf_SortBy\" value=\"departTime\"
-        />\r\n<label for=\"status_dep\">\r\nScheduled Depart\r\n</label>\r\n\r\n\r\n\r\n\r\n</div>\r\n<div
-        class=\"form_line_wrapper\">\r\n<label for=\"status_time\">\r\nTime\r\n</label>\r\n<span
-        class=\"form_entry\">\r\n\r\n\r\n<select onfocus=\"updateTimeState()\" onchange=\"timeChanged(10);updateDayDropDownListTrainStatusWithOffsets()\"
-        id=\"wdftime10\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departTime.hourmin\"><option
-        value=\"\">Anytime</option><option value=\"07:00\">Morning</option><option
-        value=\"14:00\">Afternoon</option><option value=\"19:00\">Evening</option><option
-        value=\"23:59\">Midnight</option><option value=\"01:00\">1 AM</option><option
-        value=\"02:00\">2 AM</option><option value=\"03:00\">3 AM</option><option
-        value=\"04:00\">4 AM</option><option value=\"05:00\">5 AM</option><option
-        value=\"06:00\">6 AM</option><option value=\"07:00\">7 AM</option><option
-        value=\"08:00\">8 AM</option><option value=\"09:00\">9 AM</option><option
-        value=\"10:00\">10 AM</option><option value=\"11:00\">11 AM</option><option
-        value=\"12:00\">Noon</option><option value=\"13:00\">1 PM</option><option
-        value=\"14:00\">2 PM</option><option value=\"15:00\">3 PM</option><option
-        value=\"16:00\">4 PM</option><option value=\"17:00\">5 PM</option><option
-        value=\"18:00\">6 PM</option><option value=\"19:00\">7 PM</option><option
-        value=\"20:00\">8 PM</option><option value=\"21:00\">9 PM</option><option
-        value=\"22:00\">10 PM</option><option value=\"23:00\">11 PM</option></select>\r\n\r\n</span>\r\n</div>\r\n</div>\r\n<div
-        id=\"ff_status_submit_wrapper\" class=\"subdiv\">\r\n<input type=\"hidden\"
-        name=\"_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']\"
+        id=\"status_from_auto\" class=\"autocomplete\" style=\"display:none\"></div>\r\n<div
+        id=\"status_to_auto\" class=\"autocomplete\" style=\"display:none\"></div>\r\n<div
+        class=\"form_line_wrapper1\">\r\n<label for=\"status_train_num\">\r\nTrain/Bus
+        No.\r\n</label>\r\n<span class=\"form_entry\">\r\n<input type=\"hidden\" name=\"xwdf_trainNumber\"
+        value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/segmentRequirements[1]/serviceCode\"
+        /><input onfocus=\"if (this.value=='optional') { this.value=''; updateMaxLength();
+        };\" type=\"text\" size=\"4\" id=\"status_train_num\" maxlength=\"8\" name=\"wdf_trainNumber\"
+        />\r\n</span>\r\n</div>\r\n<div class=\"form_line_wrapper\">\r\n<div id=\"div_depart_date_label\">\r\n<label
+        for=\"status_date\">\r\nDepart Date\r\n</label>\r\n</div>\r\n<div id=\"div_arrival_date_label\">\r\n<label
+        for=\"status_date\">\r\nArrival Date\r\n</label>\r\n</div>\r\n<span class=\"form_entry\">\r\n\r\n\r\n<input
+        class=\"wdfDate\" type=\"text\" size=\"22\" id=\"wdfdate10\" maxlength=\"22\"
+        name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
+        value=\"Thu, Nov 6, 2014\" readonly=\"readonly\" />\r\n\r\n</span>\r\n</div>\r\n<br
+        class=\"clear_both\" />\r\n</div>\r\n<div id=\"ff_status_submit_wrapper\"
+        class=\"subdiv\">\r\n<input type=\"hidden\" name=\"_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']\"
         />\r\n<input type=\"image\" alt=\"Check Status\" name=\"_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']\"
-        src=\"/images/en/btn_checkStatus.gif\" border=\"0\" />\r\n</div>\r\n</form>\r\n\r\n</div>\r\n<div
+        src=\"/images/en/btn_checkStatus.gif\" border=\"0\" />\r\n</div>\r\n<div class=\"form_line_wrapper
+        subdiv2\">\r\nLate trains often make up time en route and may arrive earlier
+        than expected. When trains are late, we suggest you arrive at your departure
+        station prior to the estimated arrival or departure time.\r\n</div>\r\n<div
+        class=\"form_line_wrapper subdiv\">\r\n<h3 style=\"margin-bottom:2px;\">Don't
+        know your train number?</h3>\r\n<a href=\"javascript:switchToStatusByCity();\">Check
+        status by city</a>\r\n</div>\r\n</form>\r\n</div>\r\n\r\n\r\n<div id=\"status_by_city_pair\">\r\n<form
+        onsubmit=\"javascript:return CheckMandatoryTrainStatusFieldsForStatusByCityPair();\"
+        name=\"ff_status_form2\" action=\"http://tickets.amtrak.com/itd/amtrak\" method=\"post\"><input
+        type=\"hidden\" name=\"requestor\" value=\"amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler\"
+        />\r\n<input type=\"hidden\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/@trainStatusType\"
+        value=\"statusByCityPair\" />\r\n<input type=\"hidden\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect\"
+        value=\"arrivalTime\" />\r\n<div id=\"ff_status_step_1\" class=\"subdiv\">\r\n<div
+        id=\"status_dep_city\" class=\"ff_status_city_wrapper citypair_from\">\r\n<label
+        for=\"status_from\">\r\nFrom\r\n</label>\r\n<!-- itd:locationinput id=\"status_dep\"
+        wdfxpath=\"travelSelection/journeySelection[1]/departLocation\" wdfhtmlname=\"wdf_origin\"
+        wdflimitedlocations=\"resource:TRAVEL_USE_LIMITED_LOCATIONS\" size=\"25\"
+        / -->\r\n<input type=\"hidden\" name=\"xwdf_origin\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/departLocation/search\"
+        /><input type=\"text\" autocomplete=\"off\" id=\"status_from1\" maxlength=\"150\"
+        name=\"wdf_origin\" value=\"Providence, RI (PVD)\" />\r\n<p><span class=\"find_a_station\">\r\n<a
+        title=\"Click for a list of stations.\" href=\"javascript:fieldName='status_from1';
+        openStationList();\">Find a Station</a>\r\n</span></p>\r\n</div>\r\n<div id=\"status_arr_city\"
+        class=\"ff_status_city_wrapper\">\r\n<label for=\"status_to\">\r\nTo\r\n</label>\r\n<!--
+        itd:locationinput id=\"status_to\" wdfxpath=\"travelSelection/journeySelection[1]/arriveLocation\"
+        wdfhtmlname=\"wdf_destination\" wdflimitedlocations=\"resource:TRAVEL_USE_LIMITED_LOCATIONS\"
+        size=\"25\" / -->\r\n<input type=\"hidden\" name=\"xwdf_destination\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/arriveLocation/search\"
+        /><input type=\"text\" autocomplete=\"off\" id=\"status_to1\" maxlength=\"150\"
+        name=\"wdf_destination\" value=\"Boston - Back Bay, MA (BBY)\" />\r\n<p><span
+        class=\"find_a_station\">\r\n<a title=\"Click for a list of stations.\" href=\"javascript:fieldName='status_to1';
+        openStationList();\">Find a Station</a>\r\n</span></p>\r\n</div>\r\n<div id=\"status_from_auto1\"
+        class=\"autocomplete\" style=\"display:none\"></div>\r\n<div id=\"status_to_auto1\"
+        class=\"autocomplete\" style=\"display:none\"></div>\r\n<div class=\"form_line_wrapper\">\r\n<div
+        id=\"div_depart_date_label\">\r\n<label for=\"status_date\">\r\nArrival Date\r\n</label>\r\n</div>\r\n<span
+        class=\"form_entry\">\r\n\r\n\r\n<input class=\"wdfDate\" type=\"text\" size=\"22\"
+        id=\"wdfdate11\" maxlength=\"22\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
+        value=\"Thu, Nov 6, 2014\" readonly=\"readonly\" />\r\n\r\n</span>\r\n</div>\r\n<br
+        class=\"clear_both\" />\r\n</div>\r\n<div id=\"ff_status_submit_wrapper\"
+        class=\"subdiv\">\r\n<input type=\"hidden\" name=\"_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']\"
+        />\r\n<input type=\"image\" alt=\"Check Status\" name=\"_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']\"
+        src=\"/images/en/btn_checkStatus.gif\" border=\"0\" />\r\n</div>\r\n<div class=\"form_line_wrapper
+        subdiv2\">\r\nLate trains often make up time en route and may arrive earlier
+        than expected. When trains are late, we suggest you arrive at your departure
+        station prior to the estimated arrival or departure time.\r\n</div>\r\n<div
+        class=\"form_line_wrapper subdiv\">\r\n<h3 style=\"margin-bottom:45px;\"><a
+        href=\"javascript:switchToStatusByTrain();\">Check status by train number</a></h3>\r\n</div>\r\n</form>\r\n</div>\r\n\r\n\r\n</div>\r\n<div
         id=\"farefinder_tabbody_schedules\" class=\"farefinder_tabbody\">\r\n\r\n<form
         onsubmit=\"javascript:return CheckMandatoryScheduleFields(this);\" name=\"ff_schedules_form\"
         action=\"http://tickets.amtrak.com/itd/amtrak\" method=\"post\"><input type=\"hidden\"
@@ -676,32 +689,35 @@ http_interactions:
         Ajax.Autocompleter('status_from','status_from_auto','/itd/amtrak/AutoComplete',
         {\r\nparamName: \"_origin\",\r\nminChars: 2,\r\nfrequency: 0.5\r\n}\r\n);\r\nnew
         Ajax.Autocompleter('status_to','status_to_auto','/itd/amtrak/AutoComplete',
+        {\r\nparamName: \"_destination\",\r\nminChars: 2,\r\nfrequency: 0.5\r\n}\r\n);\r\nnew
+        Ajax.Autocompleter('status_from1','status_from_auto1','/itd/amtrak/AutoComplete',
+        {\r\nparamName: \"_origin\",\r\nminChars: 2,\r\nfrequency: 0.5\r\n}\r\n);\r\nnew
+        Ajax.Autocompleter('status_to1','status_to_auto1','/itd/amtrak/AutoComplete',
         {\r\nparamName: \"_destination\",\r\nminChars: 2,\r\nfrequency: 0.5\r\n}\r\n);\r\n//
         ]]>\r\n</script>\r\n\r\n<!-- End HTML for Fare Finder -->\r\n<script language=\"JavaScript\"
-        type=\"text/javascript\">\r\n<!--\r\nfunction CheckMandatoryTrainStatusFields(statusForm)
-        {\r\nvar errorMsg =\"\";\r\nvar fieldList = \"\";\r\nvar origin = statusForm.wdf_origin.value;\r\nvar
-        destination = statusForm.wdf_destination.value;\r\nvar trainNumber = statusForm.wdf_trainNumber.value;\r\nif(eval(\"statusForm.wdf_trainNumber.value\")
-        == \"optional\") {\r\ntrainNumber = \"\";\r\n}\r\nif (trainNumber == \"\"
-        && origin == \"\" && destination == \"\")\r\nfieldList = \"Problem with Departure
-        and Arrival Station/City: Please provide a valid departure and arrival station
-        or city name and resubmit. \\n[Error ID: 573S]\" + \"\\n\";\r\nif (trainNumber
-        == \"\" && origin != \"\" && destination == \"\")\r\nfieldList = fieldList
-        + \"Problem with Arrival Station/City or Train Number: Please provide a valid
-        arrival station/city or train number and resubmit. \\n[Error ID: 574S]\" +
-        \"\\n\";\r\nif (trainNumber == \"\" && origin == \"\" && destination != \"\")\r\nfieldList
-        = fieldList + \"Problem with Departure Station/City or Train Number: Please
-        provide a valid departure station/city or train number and resubmit. \\n[Error
-        ID: 575S]\" + \"\\n\";\r\nif (trainNumber != \"\" && origin == \"\" && destination
-        == \"\")\r\nfieldList = fieldList + \"Problem with Departure or Arrival Station/City:
-        Please provide a valid departure or arrival station or city name and resubmit.
-        \\n[Error ID: 576S]\" + \"\\n\";\r\nif ((trainNumber != \"\") && (!IsNumber(trainNumber)))\r\nfieldList
-        = fieldList + \"Problem with Train Number: Sorry, we cannot find the train
-        number you provided. Please check for accuracy and re-enter. Or, delete the
-        train number and provide a departure and arrival station/city. To find a specific
-        station, please click on the \\'Find a Station\\' link and select a station
-        from the list provided. \\n[Error ID: 577S]\" + \"\\n\";\r\nif (fieldList
-        != \"\") {\r\nerrorMsg = \"The following information is needed to process
-        your request:\" + \"\\n\\n\" + fieldList;\r\n}\r\nif (errorMsg != \"\") {\r\nalert(errorMsg);\r\nreturn
+        type=\"text/javascript\">\r\n<!--\r\nfunction CheckMandatoryTrainStatusFieldsForStatusByTrainNumber()
+        {\r\nvar errorMsg = \"\";\r\nvar fieldList = \"\";\r\nvar arrivalStatus_checked
+        = document.ff_status_form1.status_arr.checked;\r\nvar departureStatus_checked
+        = document.ff_status_form1.status_dep.checked;\r\nvar origin = document.ff_status_form1.wdf_origin.value;\r\nvar
+        destination = document.ff_status_form1.wdf_destination.value;\r\nvar trainNumber
+        = document.ff_status_form1.wdf_trainNumber.value;\r\nif(trainNumber == \"\")
+        {\r\ntrainNumber = \"\";\r\n}\r\nif (departureStatus_checked && origin ==
+        \"\")\r\nfieldList = fieldList + \" -- Departure Station\" + \"\\n\";\r\nif
+        (arrivalStatus_checked && destination == \"\")\r\nfieldList = fieldList +
+        \" -- Arrival Station\" + \"\\n\";\r\nif (trainNumber == \"\" || ((trainNumber
+        != \"\") && (!IsNumber(trainNumber))))\r\nfieldList = fieldList + \" -- Valid
+        Train or Bus Number\" + \"\\n\";\r\nif (fieldList != \"\")\r\nerrorMsg = \"The
+        following information is needed to process your request:\" + \"\\n\" + fieldList;\r\nif
+        (errorMsg != \"\"){\r\nalert(errorMsg);\r\nreturn false;\r\n}\r\nif(arrivalStatus_checked)
+        {\r\ndocument.ff_status_form1.wdf_origin.value = '';\r\n} else if(departureStatus_checked)
+        {\r\ndocument.ff_status_form1.wdf_destination.value = '';\r\n}\r\nreturn true;\r\n}\r\nfunction
+        CheckMandatoryTrainStatusFieldsForStatusByCityPair() {\r\nvar errorMsg =\"\";\r\nvar
+        fieldList = \"\";\r\nvar origin = document.ff_status_form2.wdf_origin.value;\r\nvar
+        destination = document.ff_status_form2.wdf_destination.value;\r\nif (origin
+        == \"\")\r\nfieldList = fieldList + \" -- From\" + \"\\n\";\r\nif (destination
+        == \"\")\r\nfieldList = fieldList + \" -- To\" + \"\\n\";\r\nif (fieldList
+        != \"\")\r\nerrorMsg = \"The following information is needed to process your
+        request:\" + \"\\n\" + fieldList;\r\nif (errorMsg != \"\") {\r\nalert(errorMsg);\r\nreturn
         false;\r\n}\r\nreturn true;\r\n}\r\nfunction CheckMandatoryScheduleFields(statusForm)
         {\r\nvar errorMsg =\"\";\r\nvar fieldList = \"\";\r\nvar origin = statusForm.wdf_origin.value;\r\nvar
         destination = statusForm.wdf_destination.value;\r\nif (origin == \"\" && destination
@@ -805,8 +821,10 @@ http_interactions:
         {\r\nbackground-color:#EEE;\r\n}\r\n</style>\r\n<script language=\"JavaScript\"
         type=\"text/javascript\" src=\"/itd/project/scripts/en/amtrak/basic_pagination_trainstatus.js\"></script>\r\n<script
         type=\"text/javascript\">\r\nvar pageDisplay = '10';\r\nvar currentPage =
-        0;\r\nvar availabilityLength = '0';\r\nvar statusResult;\r\nElement.observe(window,
-        'load', function(){\r\nshow_ff_tab('status');\r\npageFilterDisplay(availabilityLength);\r\n});\r\n</script>\r\n\r\n\r\n\r\n<meta
+        0;\r\nvar availabilityLength = '0';\r\nvar trainStatusType = 'statusByCityPair';\r\nvar
+        statusResult;\r\nElement.observe(window, 'load', function(){\r\nshow_ff_tab('status');\r\nif(trainStatusType
+        == 'statusByTrainNumber') {\r\nswitchToStatusByTrain();\r\n} else if(trainStatusType
+        == 'statusByCityPair') {\r\nswitchToStatusByCity();\r\n}\r\nsetDepartOrArrivalFieldVisibility();\r\npageFilterDisplay(availabilityLength);\r\n});\r\n</script>\r\n\r\n\r\n\r\n<meta
         name=\"WT.cg_s\" content=\"status\" />\r\n\n\r\n\r\n\r\n</form>\r\n</div>\r\n<br
         class=\"clear_both\" />\r\n</div>\r\n</div>\r\n</div>\r\n\r\n\r\n<script language=\"JavaScript\">\r\n<!--\r\nfunction
         getProfileStr(){\r\nreturn 'amtrak';\r\n}\r\ndocument.write('<meta name=\"DCSext.PROFILE\"
@@ -834,5 +852,5 @@ http_interactions:
         src='https://askjulie.amtrak.com/ui/includes/NIT.Embed.js' id=\"agentScript\"></script><!--
         mp_trans_remove_end -->\r\n</body>\r\n</html>\r\n"
     http_version: 
-  recorded_at: Fri, 28 Nov 2014 18:43:06 GMT
+  recorded_at: Sun, 07 Dec 2014 19:36:27 GMT
 recorded_with: VCR 2.9.3

@@ -5,7 +5,7 @@ http_interactions:
     uri: http://tickets.amtrak.com/itd/amtrak
     body:
       encoding: US-ASCII
-      string: _handler%3Damtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler%2F_xpath%3D%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D=&%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FdepartDate.date=Thu%2C+Nov+27%2C+2014&requestor=amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler&xwdf_trainNumber=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FsegmentRequirements%5B1%5D%2FserviceCode&wdf_trainNumber=optional&xwdf_SortBy=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FdepartDate%2F%40radioSelect&wdf_SortBy=arrivalTime&xwdf_origin=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtravelSelection%2FjourneySelection%5B1%5D%2FdepartLocation%2Fsearch&wdf_origin=pvd&xwdf_destination=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtravelSelection%2FjourneySelection%5B1%5D%2FarriveLocation%2Fsearch&wdf_destination=bby
+      string: _handler%3Damtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler%2F_xpath%3D%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D=&%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FdepartDate.date=Sat%2C+Dec+6%2C+2014&%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2F%40trainStatusType=statusByCityPair&%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtripRequirements%2FjourneyRequirements%5B1%5D%2FdepartDate%2F%40radioSelect=arrivalTime&requestor=amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler&xwdf_origin=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtravelSelection%2FjourneySelection%5B1%5D%2FdepartLocation%2Fsearch&wdf_origin=pvd&xwdf_destination=%2FsessionWorkflow%2FproductWorkflow%5B%40product%3D%27Rail%27%5D%2FtravelSelection%2FjourneySelection%5B1%5D%2FarriveLocation%2Fsearch&wdf_destination=bby
     headers:
       Content-Type:
       - application/x-www-form-urlencoded
@@ -15,14 +15,14 @@ http_interactions:
       message: 
     headers:
       Content-Length:
-      - '94111'
+      - '86464'
       Content-Type:
       - text/html;charset=UTF-8
       Set-Cookie:
-      - JSESSIONID=0000DNThKM7CXzYBisAlMZDz1uY:186s6mukn; HTTPOnly; Path=/; Domain=.amtrak.com;
-        HttpOnly, TS81804f=ff562a6b55d5f2bd3e557c9eec9f45e3ed3917849cbba11c5478cbd160ac0ec54543cf57;
-        path=/; domain=.amtrak.com, TS3f5eae=286d3eead41eaf9f1ea824b19e0c2051ed3917849cbba11c5478cbd1;
-        Path=/
+      - _op_aixPageId=a2_39742288-94b4-48fe-8035-9d42f05f97a1; Path=/, TS81804f=7596aa54b59676f3324a32fc12ecaafe7c2830bd1785e5355484ab1260ac0ec5ddeacb80;
+        path=/; domain=.amtrak.com, TS3f5eae=7813aa4ecaaf9925374d179fd25e1b497c2830bd1785e5355484ab125f2a2d3ea2e62fb5;
+        Path=/, JSESSIONID=0000sPKZHY89Ow04Jgo0JI3itIY:186s2bfm5; HTTPOnly; Path=/;
+        Domain=.amtrak.com; HttpOnly
       X-powered-by:
       - Servlet/3.0
       Expires:
@@ -31,15 +31,17 @@ http_interactions:
       - en-US
       X-frame-options:
       - SAMEORIGIN
+      X-opnet-transaction-trace:
+      - a2_39742288-94b4-48fe-8035-9d42f05f97a1
       Date:
-      - Fri, 28 Nov 2014 19:24:03 GMT
+      - Sun, 07 Dec 2014 19:31:36 GMT
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\r\n\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n\r\n\r\n<!--\r\n\"Amtrak
-        Release 6.21.03a\"\r\n-->\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n\r\n<meta
-        content=\"IE=EmulateIE7\" http-equiv=\"X-UA-Compatible\" />\r\n\r\n\r\n\r\n\r\n<head
+        Release 6.22.02a\"\r\n-->\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\r\n<meta
+        content=\"IE=edge\" http-equiv=\"X-UA-Compatible\" />\r\n\r\n\r\n\r\n<head
         ><title>Amtrak - Train Status - Details</title>\n<meta http-equiv=\"content-type\"
         content=\"text/html; charset=UTF-8\" />\n<meta name=\"robots\" content=\"noindex,nofollow\"
         />\n<meta http-equiv=\"imagetoolbar\" content=\"no\" />\n<style type=\"text/css\">\n<!--\n@import
@@ -184,23 +186,16 @@ http_interactions:
         == 'ff_status_form') {\r\naddFormSubmitEvent(forms[i]);\r\n}\r\n}\r\n});\r\n</script>\r\n<![endif]-->\r\n<!--
         Begin HTML for Fare Finder -->\r\n<div id=\"farefinder\">\r\n<div id=\"ff_tabbar\">\r\n<div
         class=\"active\" id=\"ff_tabbar_tickets\">Tickets<span onclick=\"compare_dates('wdfdate1');show_ff_tab('tickets');showHideRedeemTabBarSection('ff_sub_tabbar',
-        true);\"></span></div>\r\n<div id=\"ff_tabbar_status\">Status<span onclick=\"set_status_date('wdfdate10');show_ff_tab('status');\"></span></div>\r\n<div
+        true);\"></span></div>\r\n<div id=\"ff_tabbar_status\">Status<span onclick=\"set_status_date('wdfdate10');set_status_date('wdfdate11');show_ff_tab('status');setDepartOrArrivalFieldVisibility();switchToStatusByTrain();\"></span></div>\r\n<div
         id=\"ff_tabbar_schedules\">Schedules<span onclick=\"compare_dates('wdfdate5');show_ff_tab('schedules');\"></span></div>\r\n<div
         id=\"ff_tabbar_mytrip\">My Trip<span onclick=\"show_ff_tab('mytrip');\"></span></div>\r\n</div>\r\n\r\n\r\n\r\n\r\n<div
         id=\"ff_sub_tabbar\" class=\"show_section\">\r\n<div class=\"active\" id=\"ff_sub_tabbar_bookatrip\">Book<span
         onclick=\"show_ff_sub_tab('bookatrip');\"></span></div>\r\n<div id=\"ff_sub_tabbar_redeem\">Redeem<span
         onclick=\"show_ff_sub_tab('redeem');\"></span></div>\r\n<div id=\"ff_sub_tabbar_traveloptions\">Travel
         Options<span onclick=\"show_ff_sub_tab('traveloptions');\"></span></div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
-        id=\"farefinder_tabbody_tickets\" class=\"farefinder_tabbody ff_active\">\r\n<div
-        id=\"ada_link\" class=\"subdiv\" >\r\n<label for=\"ff_ada_link\" ><a href=\"javascript:show_adainfo(this)\"
-        onclick=\"javascript:show_adainfo(this)\" >Passengers with a Disability</a></label>\r\n<div
-        id=\"ada_linktext\" class=\"ada_linktext\">\r\n<a class=\"button ada_infoclose\"
-        href=\"javascript:close_adainfo();\"><img src=\"/images/en/btn_closeWindow.png\"
-        alt=\"Close\" /></a>\r\n<p>To make a reservation for a passenger with a disability,
-        select Passenger with Disability (PWD) from the passenger type selection menu
-        \ below.</p>\r\n</div>\r\n<span id=\"ada_linktext_before\" ></span>\r\n<span
-        id=\"ada_linktext_after\" ></span>\r\n</div>\r\n<form name=\"form\" action=\"http://tickets.amtrak.com/itd/amtrak\"
-        method=\"post\"><input type=\"hidden\" name=\"requestor\" value=\"amtrak.presentation.handler.page.rail.AmtrakRailFareFinderPageHandler\"
+        id=\"farefinder_tabbody_tickets\" class=\"farefinder_tabbody ff_active\">\r\n<form
+        name=\"form\" action=\"http://tickets.amtrak.com/itd/amtrak\" method=\"post\"><input
+        type=\"hidden\" name=\"requestor\" value=\"amtrak.presentation.handler.page.rail.AmtrakRailFareFinderPageHandler\"
         />\r\n<input type=\"hidden\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/@bookpath\"
         value=\"farefamilies\" />\r\n<input type=\"hidden\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/allJourneyRequirements/@ff_tab_selected\"
         value=\"bookatrip\" />\r\n<h2>Tickets</h2>\r\n\r\n<div id=\"ff_tickets_tt_cities_subdiv\"
@@ -230,7 +225,7 @@ http_interactions:
         id=\"tickets_dep_date_time\" class=\"level5\">\r\n<div class=\"ff_date_wrapper\">\r\n<label
         for=\"tickets_dep_date\">Departs</label>\r\n\r\n\r\n<input class=\"wdfDate\"
         type=\"text\" size=\"22\" id=\"wdfdate1\" maxlength=\"22\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
-        value=\"Thu, Nov 27, 2014\" readonly=\"readonly\" /></div><div class=\"ff_time_wrapper\"><label
+        value=\"Sat, Dec 6, 2014\" readonly=\"readonly\" /></div><div class=\"ff_time_wrapper\"><label
         for=\"wdftime1\"><b>Time</b></label><select onfocus=\"updateTimeState()\"
         onchange=\"timeChanged(1);updateDayDropDownListTrainStatusWithOffsets()\"
         id=\"wdftime1\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departTime.hourmin\"><option
@@ -413,15 +408,7 @@ http_interactions:
         = parseInt(document.getElementById(\"oth_seniors\").value);\r\ntadt -= 1;\r\ntsen
         += 1;\r\ndocument.getElementById(\"oth_adults\").value = tadt;\r\ndocument.getElementById(\"oth_seniors\").value
         = tsen;\r\nvar res = document.getElementById(newlabel).innerHTML.replace(\"Adult\",\"Senior\");\r\ndocument.getElementById(newlabel).innerHTML
-        =res;\r\n}\r\n}\r\n}\r\n}\r\nfunction show_adainfo(faq)\r\n{\r\nif (document.getElementById(\"ada_linktext\")
-        != undefined)\r\ndocument.getElementById(\"ada_linktext\").style.display =
-        'block';\r\ndocument.getElementById(\"ada_linktext_before\").style.display
-        = 'block';\r\ndocument.getElementById(\"ada_linktext_after\").style.display
-        = 'block';\r\n}\r\nfunction close_adainfo()\r\n{\r\nif (document.getElementById(\"ada_linktext\")
-        != undefined)\r\ndocument.getElementById(\"ada_linktext\").style.display =
-        'none';\r\ndocument.getElementById(\"ada_linktext_before\").style.display
-        = 'none';\r\ndocument.getElementById(\"ada_linktext_after\").style.display
-        = 'none';\r\n}\r\nfunction closeAlertBox() {\r\nvar $j = jQuery.noConflict();\r\n$j(\".ui-dialog-content\").dialog(\"close\");\r\n}\r\n</script>\r\n<style>\r\n.disc_passenger_select
+        =res;\r\n}\r\n}\r\n}\r\n}\r\nfunction closeAlertBox() {\r\nvar $j = jQuery.noConflict();\r\n$j(\".ui-dialog-content\").dialog(\"close\");\r\n}\r\n</script>\r\n<style>\r\n.disc_passenger_select
         {\r\nmargin-top:2px;\r\nmargin-left:0px;\r\n}\r\n</style>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
         id=\"farefinder_tabbody_redeem\" class=\"farefinder_tabbody\">\r\n<h2>Redeem
         Points</h2>\r\n<form name=\"ff_redeem_form\" action=\"https://tickets.amtrak.com/itd/amtrak\"
@@ -455,7 +442,7 @@ http_interactions:
         class=\"ff_date_wrapper\">\r\n<label for=\"wdfdate15\">Departs</label>\r\n\r\n\r\n<input
         class=\"wdfDate\" type=\"text\" size=\"22\" id=\"wdfdate15\" maxlength=\"22\"
         name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
-        value=\"Thu, Nov 27, 2014\" readonly=\"readonly\" /></div><div class=\"ff_time_wrapper\"><label
+        value=\"Sat, Dec 6, 2014\" readonly=\"readonly\" /></div><div class=\"ff_time_wrapper\"><label
         for=\"wdftimenull\"><b>Time</b></label><select onfocus=\"updateTimeState()\"
         onchange=\"timeChanged(15);updateDayDropDownListTrainStatusWithOffsets()\"
         id=\"wdftime15\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departTime.hourmin\"><option
@@ -508,70 +495,96 @@ http_interactions:
         />\r\n<a class=\"button\" href=\"http://tickets.amtrak.com/itd/amtrak/grouptravel\">
         \r\n\r\n<img src='http://www.amtrak.com/servlet/Satellite?blobcol=urldata&blobheader=image%2Fgif&blobkey=id&blobtable=MungoBlobs&blobwhere=1249288591983&ssbinary=true'
         alt='Make a Group Travel Request'></img>\r\n\r\n</a></p>\r\n</div>\r\n</div>\r\n\r\n<div
-        id=\"farefinder_tabbody_status\" class=\"farefinder_tabbody\">\r\n\r\n<form
-        onsubmit=\"javascript:return CheckMandatoryTrainStatusFields(this)\" name=\"ff_status_form\"
-        action=\"http://tickets.amtrak.com/itd/amtrak\" method=\"post\"><input type=\"hidden\"
-        name=\"requestor\" value=\"amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler\"
-        />\r\n<h2>Status</h2>\r\n<div id=\"ff_status_step_1\" class=\"subdiv1\">\r\n<h3>Check
-        Status of a Train</h3>\r\n<div class=\"form_line_wrapper first\">\r\n<label
-        for=\"status_date\">\r\nDate:\r\n</label>\r\n<span class=\"form_entry\">\r\n\r\n\r\n<input
-        class=\"wdfDate\" type=\"text\" size=\"22\" id=\"wdfdate10\" maxlength=\"22\"
-        name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
-        value=\"Thu, Nov 27, 2014\" readonly=\"readonly\" />\r\n\r\n</span>\r\n</div>\r\n<div
-        class=\"form_line_wrapper\">\r\n<label for=\"status_train_num\">\r\nTrain
-        No.\r\n</label>\r\n<span class=\"form_entry\">\r\n<input type=\"hidden\" name=\"xwdf_trainNumber\"
-        value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/segmentRequirements[1]/serviceCode\"
-        /><input onfocus=\"if (this.value=='optional') { this.value=''; updateMaxLength();
-        };\" type=\"text\" size=\"4\" id=\"status_train_num\" maxlength=\"8\" name=\"wdf_trainNumber\"
-        value=\"optional\" />\r\n</span>\r\n</div>\r\n<br class=\"clear_both\" />\r\n</div>\r\n<div
-        id=\"ff_status_step_2\" class=\"subdiv\">\r\n<div id=\"ff_status_footnote_submit_wrapper\">\r\n<p>One
-        city is required if train number is used.</p>\r\n</div>\r\n<div id=\"status_dep_city\"
-        class=\"ff_city_wrapper\">\r\n<label for=\"status_from\">\r\nFrom\r\n</label>\r\n<!--
+        id=\"farefinder_tabbody_status\" class=\"farefinder_tabbody\">\r\n\r\n\r\n<div
+        id=\"status_by_train_number\">\r\n<form onsubmit=\"javascript:return CheckMandatoryTrainStatusFieldsForStatusByTrainNumber();\"
+        name=\"ff_status_form1\" action=\"http://tickets.amtrak.com/itd/amtrak\" method=\"post\"><input
+        type=\"hidden\" name=\"requestor\" value=\"amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler\"
+        />\r\n<input type=\"hidden\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/@trainStatusType\"
+        value=\"statusByTrainNumber\" />\r\n<h2>Status</h2>\r\n<div id=\"ff_status_step_1\"
+        class=\"subdiv1\">\r\n<div id=\"status_arr_or_dep_wrapper\">\r\n\r\n\r\n<p>\r\n<input
+        type=\"hidden\" name=\"xwdf_SortBy\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect\"
+        /><input type=\"radio\" id=\"status_arr\" name=\"wdf_SortBy\" value=\"arrivalTime\"
+        onclick=\"javascript:return setDepartOrArrivalFieldVisibility();\" checked=\"checked\"
+        />\r\n<label for=\"status_arr\">\r\nArrival Status\r\n</label>\r\n</p>\r\n<p>\r\n<input
+        type=\"hidden\" name=\"xwdf_SortBy\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect\"
+        /><input type=\"radio\" id=\"status_dep\" name=\"wdf_SortBy\" value=\"departTime\"
+        onclick=\"javascript:return setDepartOrArrivalFieldVisibility();\" />\r\n<label
+        for=\"status_dep\">\r\nDeparture Status\r\n</label>\r\n</p>\r\n\r\n\r\n\r\n\r\n</div>\r\n<div
+        id=\"status_dep_city\" class=\"ff_status_city_wrapper\">\r\n<label for=\"status_from\">\r\nStation\r\n</label>\r\n<!--
         itd:locationinput id=\"status_dep\" wdfxpath=\"travelSelection/journeySelection[1]/departLocation\"
         wdfhtmlname=\"wdf_origin\" wdflimitedlocations=\"resource:TRAVEL_USE_LIMITED_LOCATIONS\"
-        size=\"25\" / -->\r\n<input type=\"hidden\" name=\"xwdf_origin\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/departLocation/search\"
+        size=\"25\" / -->\r\n<div id=\"div_depart_station\">\r\n<input type=\"hidden\"
+        name=\"xwdf_origin\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/departLocation/search\"
         /><input type=\"text\" autocomplete=\"off\" id=\"status_from\" maxlength=\"150\"
         name=\"wdf_origin\" value=\"Providence, RI (PVD)\" />\r\n<p><span class=\"find_a_station\">\r\n<a
         title=\"Click for a list of stations.\" href=\"javascript:fieldName='status_from';
-        openStationList();\">Find a Station</a>\r\n</span></p>\r\n</div>\r\n<div id=\"status_arr_city\"
-        class=\"ff_city_wrapper\">\r\n<label for=\"status_to\">\r\nTo\r\n</label>\r\n<!--
-        itd:locationinput id=\"status_to\" wdfxpath=\"travelSelection/journeySelection[1]/arriveLocation\"
-        wdfhtmlname=\"wdf_destination\" wdflimitedlocations=\"resource:TRAVEL_USE_LIMITED_LOCATIONS\"
-        size=\"25\" / -->\r\n<input type=\"hidden\" name=\"xwdf_destination\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/arriveLocation/search\"
+        openStationList();\">Find a Station</a>\r\n</span></p>\r\n</div>\r\n<div id=\"div_arrive_station\">\r\n<input
+        type=\"hidden\" name=\"xwdf_destination\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/arriveLocation/search\"
         /><input type=\"text\" autocomplete=\"off\" id=\"status_to\" maxlength=\"150\"
         name=\"wdf_destination\" value=\"Boston - Back Bay, MA (BBY)\" />\r\n<p><span
         class=\"find_a_station\">\r\n<a title=\"Click for a list of stations.\" href=\"javascript:fieldName='status_to';
         openStationList();\">Find a Station</a>\r\n</span></p>\r\n</div>\r\n</div>\r\n<div
-        id=\"ff_status_step_3\" class=\"subdiv\">\r\n<div id=\"status_from_auto\"
-        class=\"autocomplete\" style=\"display:none\"></div>\r\n<div id=\"status_to_auto\"
-        class=\"autocomplete\" style=\"display:none\"></div>\r\n<div id=\"status_arr_or_dep_wrapper\">\r\n\r\n\r\n<input
-        type=\"hidden\" name=\"xwdf_SortBy\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect\"
-        /><input type=\"radio\" id=\"status_arr\" name=\"wdf_SortBy\" value=\"arrivalTime\"
-        checked=\"checked\" />\r\n<label for=\"status_arr\">\r\nScheduled Arrive\r\n</label>\r\n&nbsp;&nbsp;\r\n<input
-        type=\"hidden\" name=\"xwdf_SortBy\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect\"
-        /><input type=\"radio\" id=\"status_dep\" name=\"wdf_SortBy\" value=\"departTime\"
-        />\r\n<label for=\"status_dep\">\r\nScheduled Depart\r\n</label>\r\n\r\n\r\n\r\n\r\n</div>\r\n<div
-        class=\"form_line_wrapper\">\r\n<label for=\"status_time\">\r\nTime\r\n</label>\r\n<span
-        class=\"form_entry\">\r\n\r\n\r\n<select onfocus=\"updateTimeState()\" onchange=\"timeChanged(10);updateDayDropDownListTrainStatusWithOffsets()\"
-        id=\"wdftime10\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departTime.hourmin\"><option
-        value=\"\">Anytime</option><option value=\"07:00\">Morning</option><option
-        value=\"14:00\">Afternoon</option><option value=\"19:00\">Evening</option><option
-        value=\"23:59\">Midnight</option><option value=\"01:00\">1 AM</option><option
-        value=\"02:00\">2 AM</option><option value=\"03:00\">3 AM</option><option
-        value=\"04:00\">4 AM</option><option value=\"05:00\">5 AM</option><option
-        value=\"06:00\">6 AM</option><option value=\"07:00\">7 AM</option><option
-        value=\"08:00\">8 AM</option><option value=\"09:00\">9 AM</option><option
-        value=\"10:00\">10 AM</option><option value=\"11:00\">11 AM</option><option
-        value=\"12:00\">Noon</option><option value=\"13:00\">1 PM</option><option
-        value=\"14:00\">2 PM</option><option value=\"15:00\">3 PM</option><option
-        value=\"16:00\">4 PM</option><option value=\"17:00\">5 PM</option><option
-        value=\"18:00\">6 PM</option><option value=\"19:00\">7 PM</option><option
-        value=\"20:00\">8 PM</option><option value=\"21:00\">9 PM</option><option
-        value=\"22:00\">10 PM</option><option value=\"23:00\">11 PM</option></select>\r\n\r\n</span>\r\n</div>\r\n</div>\r\n<div
-        id=\"ff_status_submit_wrapper\" class=\"subdiv\">\r\n<input type=\"hidden\"
-        name=\"_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']\"
+        id=\"status_from_auto\" class=\"autocomplete\" style=\"display:none\"></div>\r\n<div
+        id=\"status_to_auto\" class=\"autocomplete\" style=\"display:none\"></div>\r\n<div
+        class=\"form_line_wrapper1\">\r\n<label for=\"status_train_num\">\r\nTrain/Bus
+        No.\r\n</label>\r\n<span class=\"form_entry\">\r\n<input type=\"hidden\" name=\"xwdf_trainNumber\"
+        value=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/segmentRequirements[1]/serviceCode\"
+        /><input onfocus=\"if (this.value=='optional') { this.value=''; updateMaxLength();
+        };\" type=\"text\" size=\"4\" id=\"status_train_num\" maxlength=\"8\" name=\"wdf_trainNumber\"
+        />\r\n</span>\r\n</div>\r\n<div class=\"form_line_wrapper\">\r\n<div id=\"div_depart_date_label\">\r\n<label
+        for=\"status_date\">\r\nDepart Date\r\n</label>\r\n</div>\r\n<div id=\"div_arrival_date_label\">\r\n<label
+        for=\"status_date\">\r\nArrival Date\r\n</label>\r\n</div>\r\n<span class=\"form_entry\">\r\n\r\n\r\n<input
+        class=\"wdfDate\" type=\"text\" size=\"22\" id=\"wdfdate10\" maxlength=\"22\"
+        name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
+        value=\"Sat, Dec 6, 2014\" readonly=\"readonly\" />\r\n\r\n</span>\r\n</div>\r\n<br
+        class=\"clear_both\" />\r\n</div>\r\n<div id=\"ff_status_submit_wrapper\"
+        class=\"subdiv\">\r\n<input type=\"hidden\" name=\"_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']\"
         />\r\n<input type=\"image\" alt=\"Check Status\" name=\"_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']\"
-        src=\"/images/en/btn_checkStatus.gif\" border=\"0\" />\r\n</div>\r\n</form>\r\n\r\n</div>\r\n<div
+        src=\"/images/en/btn_checkStatus.gif\" border=\"0\" />\r\n</div>\r\n<div class=\"form_line_wrapper
+        subdiv2\">\r\nLate trains often make up time en route and may arrive earlier
+        than expected. When trains are late, we suggest you arrive at your departure
+        station prior to the estimated arrival or departure time.\r\n</div>\r\n<div
+        class=\"form_line_wrapper subdiv\">\r\n<h3 style=\"margin-bottom:2px;\">Don't
+        know your train number?</h3>\r\n<a href=\"javascript:switchToStatusByCity();\">Check
+        status by city</a>\r\n</div>\r\n</form>\r\n</div>\r\n\r\n\r\n<div id=\"status_by_city_pair\">\r\n<form
+        onsubmit=\"javascript:return CheckMandatoryTrainStatusFieldsForStatusByCityPair();\"
+        name=\"ff_status_form2\" action=\"http://tickets.amtrak.com/itd/amtrak\" method=\"post\"><input
+        type=\"hidden\" name=\"requestor\" value=\"amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler\"
+        />\r\n<input type=\"hidden\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/@trainStatusType\"
+        value=\"statusByCityPair\" />\r\n<input type=\"hidden\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect\"
+        value=\"arrivalTime\" />\r\n<div id=\"ff_status_step_1\" class=\"subdiv\">\r\n<div
+        id=\"status_dep_city\" class=\"ff_status_city_wrapper citypair_from\">\r\n<label
+        for=\"status_from\">\r\nFrom\r\n</label>\r\n<!-- itd:locationinput id=\"status_dep\"
+        wdfxpath=\"travelSelection/journeySelection[1]/departLocation\" wdfhtmlname=\"wdf_origin\"
+        wdflimitedlocations=\"resource:TRAVEL_USE_LIMITED_LOCATIONS\" size=\"25\"
+        / -->\r\n<input type=\"hidden\" name=\"xwdf_origin\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/departLocation/search\"
+        /><input type=\"text\" autocomplete=\"off\" id=\"status_from1\" maxlength=\"150\"
+        name=\"wdf_origin\" value=\"Providence, RI (PVD)\" />\r\n<p><span class=\"find_a_station\">\r\n<a
+        title=\"Click for a list of stations.\" href=\"javascript:fieldName='status_from1';
+        openStationList();\">Find a Station</a>\r\n</span></p>\r\n</div>\r\n<div id=\"status_arr_city\"
+        class=\"ff_status_city_wrapper\">\r\n<label for=\"status_to\">\r\nTo\r\n</label>\r\n<!--
+        itd:locationinput id=\"status_to\" wdfxpath=\"travelSelection/journeySelection[1]/arriveLocation\"
+        wdfhtmlname=\"wdf_destination\" wdflimitedlocations=\"resource:TRAVEL_USE_LIMITED_LOCATIONS\"
+        size=\"25\" / -->\r\n<input type=\"hidden\" name=\"xwdf_destination\" value=\"/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/arriveLocation/search\"
+        /><input type=\"text\" autocomplete=\"off\" id=\"status_to1\" maxlength=\"150\"
+        name=\"wdf_destination\" value=\"Boston - Back Bay, MA (BBY)\" />\r\n<p><span
+        class=\"find_a_station\">\r\n<a title=\"Click for a list of stations.\" href=\"javascript:fieldName='status_to1';
+        openStationList();\">Find a Station</a>\r\n</span></p>\r\n</div>\r\n<div id=\"status_from_auto1\"
+        class=\"autocomplete\" style=\"display:none\"></div>\r\n<div id=\"status_to_auto1\"
+        class=\"autocomplete\" style=\"display:none\"></div>\r\n<div class=\"form_line_wrapper\">\r\n<div
+        id=\"div_depart_date_label\">\r\n<label for=\"status_date\">\r\nArrival Date\r\n</label>\r\n</div>\r\n<span
+        class=\"form_entry\">\r\n\r\n\r\n<input class=\"wdfDate\" type=\"text\" size=\"22\"
+        id=\"wdfdate11\" maxlength=\"22\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
+        value=\"Sat, Dec 6, 2014\" readonly=\"readonly\" />\r\n\r\n</span>\r\n</div>\r\n<br
+        class=\"clear_both\" />\r\n</div>\r\n<div id=\"ff_status_submit_wrapper\"
+        class=\"subdiv\">\r\n<input type=\"hidden\" name=\"_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']\"
+        />\r\n<input type=\"image\" alt=\"Check Status\" name=\"_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']\"
+        src=\"/images/en/btn_checkStatus.gif\" border=\"0\" />\r\n</div>\r\n<div class=\"form_line_wrapper
+        subdiv2\">\r\nLate trains often make up time en route and may arrive earlier
+        than expected. When trains are late, we suggest you arrive at your departure
+        station prior to the estimated arrival or departure time.\r\n</div>\r\n<div
+        class=\"form_line_wrapper subdiv\">\r\n<h3 style=\"margin-bottom:45px;\"><a
+        href=\"javascript:switchToStatusByTrain();\">Check status by train number</a></h3>\r\n</div>\r\n</form>\r\n</div>\r\n\r\n\r\n</div>\r\n<div
         id=\"farefinder_tabbody_schedules\" class=\"farefinder_tabbody\">\r\n\r\n<form
         onsubmit=\"javascript:return CheckMandatoryScheduleFields(this);\" name=\"ff_schedules_form\"
         action=\"http://tickets.amtrak.com/itd/amtrak\" method=\"post\"><input type=\"hidden\"
@@ -600,7 +613,7 @@ http_interactions:
         class=\"ff_date_wrapper\">\r\n<label for=\"schedules_dep_date\">Depart</label>\r\n\r\n\r\n<input
         class=\"wdfDate\" type=\"text\" size=\"22\" id=\"wdfdate5\" maxlength=\"22\"
         name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date\"
-        value=\"Thu, Nov 27, 2014\" readonly=\"readonly\" /></div><div class=\"ff_time_wrapper\"><label
+        value=\"Sat, Dec 6, 2014\" readonly=\"readonly\" /></div><div class=\"ff_time_wrapper\"><label
         for=\"wdftimenull\"><b>Time</b></label><select onfocus=\"updateTimeState()\"
         onchange=\"timeChanged(5);updateDayDropDownListTrainStatusWithOffsets()\"
         id=\"wdftime5\" name=\"/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departTime.hourmin\"><option
@@ -676,32 +689,35 @@ http_interactions:
         Ajax.Autocompleter('status_from','status_from_auto','/itd/amtrak/AutoComplete',
         {\r\nparamName: \"_origin\",\r\nminChars: 2,\r\nfrequency: 0.5\r\n}\r\n);\r\nnew
         Ajax.Autocompleter('status_to','status_to_auto','/itd/amtrak/AutoComplete',
+        {\r\nparamName: \"_destination\",\r\nminChars: 2,\r\nfrequency: 0.5\r\n}\r\n);\r\nnew
+        Ajax.Autocompleter('status_from1','status_from_auto1','/itd/amtrak/AutoComplete',
+        {\r\nparamName: \"_origin\",\r\nminChars: 2,\r\nfrequency: 0.5\r\n}\r\n);\r\nnew
+        Ajax.Autocompleter('status_to1','status_to_auto1','/itd/amtrak/AutoComplete',
         {\r\nparamName: \"_destination\",\r\nminChars: 2,\r\nfrequency: 0.5\r\n}\r\n);\r\n//
         ]]>\r\n</script>\r\n\r\n<!-- End HTML for Fare Finder -->\r\n<script language=\"JavaScript\"
-        type=\"text/javascript\">\r\n<!--\r\nfunction CheckMandatoryTrainStatusFields(statusForm)
-        {\r\nvar errorMsg =\"\";\r\nvar fieldList = \"\";\r\nvar origin = statusForm.wdf_origin.value;\r\nvar
-        destination = statusForm.wdf_destination.value;\r\nvar trainNumber = statusForm.wdf_trainNumber.value;\r\nif(eval(\"statusForm.wdf_trainNumber.value\")
-        == \"optional\") {\r\ntrainNumber = \"\";\r\n}\r\nif (trainNumber == \"\"
-        && origin == \"\" && destination == \"\")\r\nfieldList = \"Problem with Departure
-        and Arrival Station/City: Please provide a valid departure and arrival station
-        or city name and resubmit. \\n[Error ID: 573S]\" + \"\\n\";\r\nif (trainNumber
-        == \"\" && origin != \"\" && destination == \"\")\r\nfieldList = fieldList
-        + \"Problem with Arrival Station/City or Train Number: Please provide a valid
-        arrival station/city or train number and resubmit. \\n[Error ID: 574S]\" +
-        \"\\n\";\r\nif (trainNumber == \"\" && origin == \"\" && destination != \"\")\r\nfieldList
-        = fieldList + \"Problem with Departure Station/City or Train Number: Please
-        provide a valid departure station/city or train number and resubmit. \\n[Error
-        ID: 575S]\" + \"\\n\";\r\nif (trainNumber != \"\" && origin == \"\" && destination
-        == \"\")\r\nfieldList = fieldList + \"Problem with Departure or Arrival Station/City:
-        Please provide a valid departure or arrival station or city name and resubmit.
-        \\n[Error ID: 576S]\" + \"\\n\";\r\nif ((trainNumber != \"\") && (!IsNumber(trainNumber)))\r\nfieldList
-        = fieldList + \"Problem with Train Number: Sorry, we cannot find the train
-        number you provided. Please check for accuracy and re-enter. Or, delete the
-        train number and provide a departure and arrival station/city. To find a specific
-        station, please click on the \\'Find a Station\\' link and select a station
-        from the list provided. \\n[Error ID: 577S]\" + \"\\n\";\r\nif (fieldList
-        != \"\") {\r\nerrorMsg = \"The following information is needed to process
-        your request:\" + \"\\n\\n\" + fieldList;\r\n}\r\nif (errorMsg != \"\") {\r\nalert(errorMsg);\r\nreturn
+        type=\"text/javascript\">\r\n<!--\r\nfunction CheckMandatoryTrainStatusFieldsForStatusByTrainNumber()
+        {\r\nvar errorMsg = \"\";\r\nvar fieldList = \"\";\r\nvar arrivalStatus_checked
+        = document.ff_status_form1.status_arr.checked;\r\nvar departureStatus_checked
+        = document.ff_status_form1.status_dep.checked;\r\nvar origin = document.ff_status_form1.wdf_origin.value;\r\nvar
+        destination = document.ff_status_form1.wdf_destination.value;\r\nvar trainNumber
+        = document.ff_status_form1.wdf_trainNumber.value;\r\nif(trainNumber == \"\")
+        {\r\ntrainNumber = \"\";\r\n}\r\nif (departureStatus_checked && origin ==
+        \"\")\r\nfieldList = fieldList + \" -- Departure Station\" + \"\\n\";\r\nif
+        (arrivalStatus_checked && destination == \"\")\r\nfieldList = fieldList +
+        \" -- Arrival Station\" + \"\\n\";\r\nif (trainNumber == \"\" || ((trainNumber
+        != \"\") && (!IsNumber(trainNumber))))\r\nfieldList = fieldList + \" -- Valid
+        Train or Bus Number\" + \"\\n\";\r\nif (fieldList != \"\")\r\nerrorMsg = \"The
+        following information is needed to process your request:\" + \"\\n\" + fieldList;\r\nif
+        (errorMsg != \"\"){\r\nalert(errorMsg);\r\nreturn false;\r\n}\r\nif(arrivalStatus_checked)
+        {\r\ndocument.ff_status_form1.wdf_origin.value = '';\r\n} else if(departureStatus_checked)
+        {\r\ndocument.ff_status_form1.wdf_destination.value = '';\r\n}\r\nreturn true;\r\n}\r\nfunction
+        CheckMandatoryTrainStatusFieldsForStatusByCityPair() {\r\nvar errorMsg =\"\";\r\nvar
+        fieldList = \"\";\r\nvar origin = document.ff_status_form2.wdf_origin.value;\r\nvar
+        destination = document.ff_status_form2.wdf_destination.value;\r\nif (origin
+        == \"\")\r\nfieldList = fieldList + \" -- From\" + \"\\n\";\r\nif (destination
+        == \"\")\r\nfieldList = fieldList + \" -- To\" + \"\\n\";\r\nif (fieldList
+        != \"\")\r\nerrorMsg = \"The following information is needed to process your
+        request:\" + \"\\n\" + fieldList;\r\nif (errorMsg != \"\") {\r\nalert(errorMsg);\r\nreturn
         false;\r\n}\r\nreturn true;\r\n}\r\nfunction CheckMandatoryScheduleFields(statusForm)
         {\r\nvar errorMsg =\"\";\r\nvar fieldList = \"\";\r\nvar origin = statusForm.wdf_origin.value;\r\nvar
         destination = statusForm.wdf_destination.value;\r\nif (origin == \"\" && destination
@@ -795,255 +811,176 @@ http_interactions:
         {\r\nbackground-color:#EEE;\r\n}\r\n</style>\r\n<script language=\"JavaScript\"
         type=\"text/javascript\" src=\"/itd/project/scripts/en/amtrak/basic_pagination_trainstatus.js\"></script>\r\n<script
         type=\"text/javascript\">\r\nvar pageDisplay = '10';\r\nvar currentPage =
-        0;\r\nvar availabilityLength = '15';\r\nvar statusResult;\r\nElement.observe(window,
-        'load', function(){\r\nshow_ff_tab('status');\r\npageFilterDisplay(availabilityLength);\r\n});\r\n</script>\r\n\r\n<div
-        id=\"loadingtrain\" style=\"display:none\">Loading...</div>\r\n<div id=\"loadingfailed\"
-        style=\"display: none\">We're sorry, we're unable to process your request.<img
-        src=\"/images/en/error_icon.gif\"></div>\r\n<div>\r\n<h1 class=\"train_status\">Current
-        Train Status<span></span></h1>\r\n<!-- Begin HTML for Page tools -->\r\n<div
-        class=\"page_tools\" id=\"page_tools_status\">\r\n<span>\r\n<a href=\"javascript:var
-        child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&help=tstatres','help','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\"
-        \ CLASS=\"smallblue\"><img alt=\"Help\" src=\"/images/en/tool_help.gif\" /></a>\r\n</span>\r\n</div>\r\n<!--
-        End HTML for Page tools -->\r\n<br class=\"clear_both\" />\r\n</div>\r\n<p
-        class=\"page_intro\">Trains often make up time en route. In many cases, recovery
-        time that is built in to the schedule may result in the train arriving at
-        or departing from the following stations on time. Please contact Amtrak at
-        1-800-USA-RAIL (1-800-872-7245) for full details on arrival status.</p>\r\n\r\n\r\n<div
-        id=\"status_header\">\r\n<div class=\"route\">\r\n<span class=\"origin\">\r\n\r\n\r\nDeparting:\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n\r\n\r\n and Arriving:\r\n<!-- mp_trans_disable_start
-        -->Boston, MA - Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n\r\n\r\n\r\n\r\n\r\n</span>\r\n</div>\r\n</div>\r\n<div
-        id=\"overlay\" style=\"background-color: white;\">\r\n<div class=\"cornered_outside\"
-        id=\"status_content_wrapper\">\r\n<div id=\"more_status_results\">\r\n<table
-        id=\"status_results\" cellspacing=\"0\" >\r\n<thead>\r\n<tr>\r\n<th class=\"service\"
-        scope=\"col\">Service</th>\r\n<th class=\"vector\" scope=\"col\">&nbsp;</th>\r\n<th
-        class=\"city\" scope=\"col\">City</th>\r\n<th class=\"scheduled\" scope=\"col\">Scheduled</th>\r\n<th
-        class=\"act_est\" scope=\"col\">Actual /<br>Estimate</th>\r\n<th class=\"status\"
-        scope=\"col\">Status</th>\r\n</tr>\r\n<tr class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n</thead>\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">178</div>\r\n<div
-        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
-        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">11:37 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Wed Nov 26, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">12:16 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
-        \ 39 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">12:24 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">12:54 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\nArrived:
-        \ 33 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">1136</div>\r\n<div
-        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
-        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">12:33 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        departure time is 12:33 am. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">1:15 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        arrival time is 1:15 am. Presently, no further information is available. Please
-        check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">66</div>\r\n<div
-        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
-        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">6:56 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        departure time is 6:56 am. Presently, no further information is available.
-        Please check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">7:53 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n\r\n\r\n&nbsp;\r\n\r\n</td>\r\n<td
-        class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\n\r\n\r\n\r\n\r\nThe scheduled
-        arrival time is 7:53 am. Presently, no further information is available. Please
-        check back later for updated information.<br/>\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">150</div>\r\n<div
-        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
-        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">10:25 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">10:42 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
-        \ 17 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">11:09 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">11:15 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\nArrived:
-        \ 7 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2290</div>\r\n<div
-        class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">10:57 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">11:03 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
-        \ 6 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">11:39 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">11:34 am</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\nArrived:
-        \ 5 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">160</div>\r\n<div
-        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
-        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">12:25 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">1:00 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
-        \ 35 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">1:10 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">1:34 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\nArrived:
-        \ 24 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2240</div>\r\n<div
-        class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">1:24 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">1:26 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
-        \ 2 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">2:06 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">1:57 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\nArrived:
-        \ 9 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">162</div>\r\n<div
-        class=\"route_name\">Northeast Regional</div>\r\n\r\n</th>\r\n\r\n\r\n<th
-        class=\"vector\" scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!--
-        mp_trans_disable_start -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">1:28 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">1:47 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
-        \ 19 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">2:13 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">2:21 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\nArrived:
-        \ 10 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs whitebackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2242</div>\r\n<div
-        class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">1:59 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">2:19 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
-        \ 20 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives whitebackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">2:41 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">2:47 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"lightbluetrainstatusbackground\">\r\n\r\nArrived:
-        \ 6 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n<tr
-        class=\"spacer\"><td colspan=\"6\">&nbsp;</td></tr>\r\n\r\n\r\n\r\n<tbody>\r\n\r\n\r\n<tr
-        class=\"status_result departs greybackground\">\r\n\r\n<th class=\"service\"
-        scope=\"rowgroup\" rowspan=\"2\">\r\n<div class=\"route_num\">2250</div>\r\n<div
-        class=\"route_name\">Acela Express</div>\r\n\r\n</th>\r\n\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nFrom\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Providence, RI (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=PVD','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">PVD</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">2:58 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">3:08 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\"></div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\n\r\nDeparted:
-        \ 10 minutes late.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n\r\n<tr
-        class=\"status_result arrives greybackground\">\r\n\r\n<th class=\"vector\"
-        scope=\"row\">\r\nTo\r\n</th>\r\n<td class=\"city\">\r\n<!-- mp_trans_disable_start
-        -->Boston, MA -<br> Back Bay (<a href=\"javascript:var child=window.open('http://www.amtrak.com/servlet/Satellite?SnippetName=IBLegacy&pagename=am/AM_Snippet_C/SnippetWrapper&code=BBY','station','directories=0,dependent=1,menubar=0,top=20,left=20,width=680,height=600,scrollbars=1');child.focus();\">BBY</a>)<!--
-        mp_trans_disable_end -->\r\n</td>\r\n<td class=\"scheduled\">\r\n\r\n\r\n<div
-        class=\"time\">3:41 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n</td>\r\n<td class=\"act_est\">\r\n\r\n<div
-        class=\"time\">3:39 pm</div>\r\n\r\n<div class=\"date\" style=\"white-space:
-        nowrap;\">Thu Nov 27, 2014</div>\r\n\r\n\r\n\r\n</td>\r\n<td class=\"darkbluetrainstatusbackground\">\r\n\r\nArrived:
-        \ 2 minutes early.<br/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</td>\r\n</tr>\r\n\r\n</tbody>\r\n\r\n\r\n\r\n</table>\r\n</div>\r\n<div
-        class=\"top_left\"></div><div class=\"top_right\"></div>\r\n\r\n<div id=\"pagination_bar\">\r\n<div
-        id=\"pagination_data\"></div>\r\n<div id=\"pagination_nav\">\r\n</div>\r\n<!--
-        Here's another place that can be made both cool and accessible.  -->\r\n<!--The
-        pagination links can be given real URL HREFs to plain old http that will take
-        the user through the pages, for users using screen readers; then you can add
-        event listeners on the links' \"click\" event that will do the cool AJAXy
-        stuff and cancel the basic browser event.-->\r\n<!--Adding \"selected\" to
-        the link's class will change it to the \"non-link\" look and hover behavior.
-        - James, IT WORKS!-->\r\n<br class=\"clear_both\" />\r\n</div>\r\n<hr class=\"after_pagination_bar\"
-        />\r\n\r\n<br class=\"clear_both\" />\r\n</div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<meta
-        name=\"WT.cg_s\" content=\"status\" />\r\n\n<meta name=\"DCSext.NBR\" content=\"preencoded:178;1136;66;150;2290;160;2240;162;2242;2250\"
+        0;\r\nvar availabilityLength = '12';\r\nvar trainStatusType = 'statusByCityPair';\r\nvar
+        statusResult;\r\nElement.observe(window, 'load', function(){\r\nshow_ff_tab('status');\r\nif(trainStatusType
+        == 'statusByTrainNumber') {\r\nswitchToStatusByTrain();\r\n} else if(trainStatusType
+        == 'statusByCityPair') {\r\nswitchToStatusByCity();\r\n}\r\nsetDepartOrArrivalFieldVisibility();\r\npageFilterDisplay(availabilityLength);\r\n});\r\n</script>\r\n\r\n\r\n<div>\r\n<h1
+        class=\"train_status\">Current Train Status<span></span></h1>\r\n<br class=\"clear_both\"
+        />\r\n</div>\r\n\r\n\r\n<div id=\"more_status_results\">\r\n<div id=\"train_status_resp_by_citypair_heading\">\r\n\r\n<div
+        id=\"resp_by_citypair_heading_left\">\r\n<div>PVD</div>\r\n<div id=\"resp_by_citypair_heading_line2\">Providence,
+        RI</div>\r\n</div>\r\n<div id=\"resp_by_citypair_heading_middle\">\r\n<img
+        alt=\"\" src=\"/images/en/station-to-station-arrow.png\" />\r\n</div>\r\n<div
+        id=\"resp_by_citypair_heading_right\">\r\n<div>BBY</div>\r\n<div id=\"resp_by_citypair_heading_line2\">Boston,
+        MA</div>\r\n</div>\r\n\r\n</div>\r\n<div id=\"train_status_spacing1\"></div>\r\n\r\n\r\n<div
+        id=\"train_status_resp_by_citypair\">\r\n<div id=\"resp_by_citypair_subheading\">\r\n<div
+        id=\"resp_by_citypair_subheading_trainname\">\r\n178&nbsp;Northeast Regional\r\n</div>\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div class=\"statusDetailsSection\">\r\n<div
+        class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div class=\"arriveDepartDelayedMsg\">
+        Departed</div>\r\n<div class=\"delayedMsg\">4 minutes late</div>\r\n\r\n<div
+        class=\"arriveDepartTime\">11:41 pm</div>\r\n<div class=\"arriveDepartDate\">Fri,
+        Dec 5 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;11:37 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/ontime-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartOntimeMsg\"> Arrived</div>\r\n<div class=\"ontimeMsg\">9
+        minutes early</div>\r\n\r\n\r\n<div class=\"arriveDepartTime\">12:15 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;12:24 am\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n66&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartOntimeMsg\"> Departed</div>\r\n<div class=\"ontimeMsg\">On
+        time</div>\r\n\r\n\r\n<div class=\"arriveDepartTime\">6:56 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;6:56 am\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">2
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">7:54 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;7:53 am\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n150&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">10
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">10:35 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;10:25 am\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">4
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">11:13 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;11:09 am\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n2290&nbsp;Acela
+        Express\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">13
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">11:10 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;10:57 am\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">10
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">11:49 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;11:39 am\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n160&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">10
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">12:35 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;12:25 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">2
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">1:10 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;1:10 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n162&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">43
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">2:11 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;1:28 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">37
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">2:48 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;2:13 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n2250&nbsp;Acela
+        Express\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">22
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">3:20 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;2:58 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">15
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">3:56 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;3:41 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n164&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"statusUnavailableMsg\">Status currently unavailable</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;4:30 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img
+        src=\"/images/en/no-status-available-origin.png\" />\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div class=\"statusDetailsSection\">\r\n<div
+        class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"statusUnavailableMsg\">Status currently unavailable</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;5:13 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n82&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">2
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">5:28 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;5:26 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/ontime-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartOntimeMsg\"> Arrived</div>\r\n<div class=\"ontimeMsg\">4
+        minutes early</div>\r\n\r\n\r\n<div class=\"arriveDepartTime\">6:04 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;6:10 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n88&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">
+        23 minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">6:50 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;6:27 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">
+        14 minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">7:28 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;7:14 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n</div>\r\n\r\n\r\n\r\n\r\n<div id=\"pagination_bar\">\r\n<div
+        id=\"pagination_data\"></div>\r\n<div id=\"pagination_nav\"></div>\r\n<br
+        class=\"clear_both\" />\r\n</div>\r\n\r\n<hr class=\"after_pagination_bar\"
+        />\r\n\r\n<br class=\"clear_both\" />\r\n<div id=\"loadingtrain\" style=\"display:none\">Loading...</div>\r\n<div
+        id=\"loadingfailed\" style=\"display: none\">We're sorry, we're unable to
+        process your request.<img src=\"/images/en/error_icon.gif\"></div>\r\n\r\n\r\n\r\n<meta
+        name=\"WT.cg_s\" content=\"status\" />\r\n\n<meta name=\"DCSext.NBR\" content=\"preencoded:178;66;150;2290;160;162;2250;164;82;88\"
         />\n<meta name=\"DCSext.ORG\" content=\"PVD\" />\n<meta name=\"DCSext.DST\"
-        content=\"BBY\" />\n<meta name=\"DCSext.DDT\" content=\"2014/11/26\" />\n<meta
-        name=\"DCSext.ADT\" content=\"2014/11/27\" />\n\r\n\r\n\r\n</form>\r\n</div>\r\n<br
+        content=\"BBY\" />\n<meta name=\"DCSext.DDT\" content=\"2014/12/05\" />\n<meta
+        name=\"DCSext.ADT\" content=\"2014/12/06\" />\n\r\n\r\n\r\n</form>\r\n</div>\r\n<br
         class=\"clear_both\" />\r\n</div>\r\n</div>\r\n</div>\r\n\r\n\r\n<script language=\"JavaScript\">\r\n<!--\r\nfunction
         getProfileStr(){\r\nreturn 'amtrak';\r\n}\r\ndocument.write('<meta name=\"DCSext.PROFILE\"
         content=\"'+getProfileStr()+'\" />');\r\n// -->\r\n</script>\r\n<meta name=\"WT.cg_n\"
@@ -1070,5 +1007,5 @@ http_interactions:
         src='https://askjulie.amtrak.com/ui/includes/NIT.Embed.js' id=\"agentScript\"></script><!--
         mp_trans_remove_end -->\r\n</body>\r\n</html>\r\n"
     http_version: 
-  recorded_at: Fri, 28 Nov 2014 19:24:03 GMT
+  recorded_at: Sun, 07 Dec 2014 19:31:36 GMT
 recorded_with: VCR 2.9.3

@@ -19,12 +19,11 @@ module Amtrak
     def parse
       trains = []
 
-      until train_nodes.empty?
-        departure, arrival = train_nodes.shift(2)
+      while train_node = train_nodes.shift
         trains << {
-          number: parse_train_number(departure),
-          departure: parse_train(departure),
-          arrival: parse_train(arrival)
+          number: parse_train_number(train_node),
+          departure: parse_train(find_depart_status(train_node)),
+          arrival: parse_train(find_arrive_status(train_node))
         }
       end
 
@@ -35,33 +34,39 @@ module Amtrak
 
     def train_nodes
       @train_nodes ||= document.search(
-        "//tr[contains(@class, 'status_result')]"
+        "//div[@id='train_status_resp_by_citypair']"
       ).tap { |results| fail 'No trains found' unless results.count > 0 }.to_a
+    end
+
+    def find_depart_status(node)
+      find!(node, ".//div[@id='resp_by_citypair_depart_status_details']")
+    end
+
+    def find_arrive_status(node)
+      find!(node, ".//div[@id='resp_by_citypair_arrive_status_details']")
     end
 
     def parse_train_number(node)
       find!(
-        node, ".//th[@class='service']/div[@class='route_num']/text()"
+        node,
+        ".//div[@id='resp_by_citypair_subheading']/\
+        div[@id='resp_by_citypair_subheading_trainname']/text()"
       ).to_s.to_i
     end
 
     def parse_train(node) # rubocop:disable Metrics/MethodLength
-      scheduled_date = find!(
-        node, ".//td[@class='scheduled']/div[@class='date']/text()"
+      date = find!(
+        node, ".//div[@class='arriveDepartDate']/text()"
       ).to_s
-      estimated_date = find!(
-        node, ".//td[@class='act_est']/div[@class='date']/text()"
+      scheduled_time = clean_msg(
+        find!(node, ".//div[@class='scheduledArriveDepartMsg']/text()").to_s
+      )
+      estimated_time = find(
+        node, ".//div[@class='arriveDepartTime']/text()"
       ).to_s
-      scheduled_time = remove_parentheses(
-        find!(node, ".//td[@class='scheduled']/div[@class='time']/text()").to_s
-      )
-      estimated_time = remove_parentheses(
-        find!(node, ".//td[@class='act_est']/div[@class='time']/text()").to_s
-      )
 
       {
-        scheduled_date: scheduled_date,
-        estimated_date: estimated_date,
+        date: date,
         scheduled_time: scheduled_time,
         estimated_time: estimated_time
       }
@@ -71,20 +76,15 @@ module Amtrak
       node.search(xpath).tap { |rs| fail "#{rs.count} results" if rs.count > 1 }
     end
 
-    def make_datetime(date, time)
-      if date.nil? || time.nil?
-        return
-      else
-        DateTime.parse("#{date} at #{time}")
-      end
+    def find(node, xpath)
+      find!(node, xpath)
+    rescue RuntimeError # rubocop:disable Lint/HandleExceptions
     end
 
-    def remove_parentheses(time_string)
-      if matches = /\(([^)]+)\)/.match(time_string)
-        matches[1]
-      else
-        time_string
-      end
+    def clean_msg(time_msg)
+      return unless matches = /\d+:\d+ (a|p)m/.match(time_msg)
+
+      matches[0]
     end
   end
 end
