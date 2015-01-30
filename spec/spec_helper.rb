@@ -7,6 +7,7 @@ SimpleCov.start do
 end
 
 require 'amtrak'
+require 'json'
 
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
