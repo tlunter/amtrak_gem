@@ -20,10 +20,11 @@ module Amtrak
       trains = []
 
       while train_node = train_nodes.shift
+        cancelled = cancelled?(train_node)
         trains << {
           number: parse_train_number(train_node),
-          departure: parse_train(find_depart_status(train_node)),
-          arrival: parse_train(find_arrive_status(train_node))
+          departure: parse_train(find_depart_status(train_node), cancelled),
+          arrival: parse_train(find_arrive_status(train_node), cancelled)
         }
       end
 
@@ -36,6 +37,10 @@ module Amtrak
       @train_nodes ||= document.search(
         "//div[@id='train_status_resp_by_citypair']"
       ).tap { |results| fail 'No trains found' unless results.count > 0 }.to_a
+    end
+
+    def cancelled?(node)
+      node.search(".//div[@class='cancelledMsg']").count > 0
     end
 
     def find_depart_status(node)
@@ -54,16 +59,20 @@ module Amtrak
       ).to_s.to_i
     end
 
-    def parse_train(node) # rubocop:disable Metrics/MethodLength
+    def parse_train(node, cancelled) # rubocop:disable Metrics/MethodLength
       date = find!(
         node, ".//div[@class='arriveDepartDate']/text()"
       ).to_s
-      scheduled_time = clean_msg(
-        find!(node, ".//div[@class='scheduledArriveDepartMsg']/text()").to_s
-      )
-      estimated_time = find(
-        node, ".//div[@class='arriveDepartTime']/text()"
-      ).to_s
+      if cancelled
+        estimated_time = scheduled_time = 'Cancelled'
+      else
+        scheduled_time = clean_msg(
+          find!(node, ".//div[@class='scheduledArriveDepartMsg']/text()").to_s
+        )
+        estimated_time = find(
+          node, ".//div[@class='arriveDepartTime']/text()"
+        ).to_s
+      end
 
       {
         date: date,
