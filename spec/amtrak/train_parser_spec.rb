@@ -68,6 +68,21 @@ describe Amtrak::TrainParser do
           expect { output }.to raise_error(Amtrak::TrainParser::Error)
         end
       end
+
+      context 'with a cancelled train' do
+        let(:document) do
+          File.read(File.join('spec', 'fixtures', 'html', 'pvd_to_bby_cancelled.html'))
+        end
+        let(:expected) do
+          JSON.parse(
+            File.read(File.join('spec', 'fixtures', 'json', '_parse_cancelled.json')),
+            symbolize_names: true
+          )
+        end
+        it 'returns a list with some trains marked Cancelled' do
+          expect(output).to eq(expected)
+        end
+      end
     end
   end
 end
