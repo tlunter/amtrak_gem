@@ -57,18 +57,18 @@ describe Amtrak::TrainFetcher::MainPage do
     end
   end
 
-  describe '#page' do
+  describe '#request' do
     context 'when Excon raises' do
       subject { described_class.new('', '') }
 
       it 'returns a TrainFetcher::Error' do
         expect(Excon).to receive(:post) { fail Excon::Errors::ClientError, '' }
-        expect { subject.page }.to raise_error(Amtrak::TrainFetcher::Error)
+        expect { subject.request }.to raise_error(Amtrak::TrainFetcher::Error)
       end
 
       it 'returns a TrainFetcher::Error' do
         expect(Excon).to receive(:post) { fail Excon::Errors::ServerError, '' }
-        expect { subject.page }.to raise_error(Amtrak::TrainFetcher::Error)
+        expect { subject.request }.to raise_error(Amtrak::TrainFetcher::Error)
       end
     end
   end

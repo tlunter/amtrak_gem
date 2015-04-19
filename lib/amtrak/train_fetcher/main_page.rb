@@ -13,8 +13,16 @@ module Amtrak
         @date = date
       end
 
-      def page
-        @page ||= Excon.post(
+      def request
+        retries ||= 3
+        _request
+      rescue SocketError, TimeoutError
+        retries -= 1
+        retry unless retries.zero?
+      end
+
+      def _request
+        @request ||= Excon.post(
           'http://tickets.amtrak.com/itd/amtrak',
           headers: headers,
           body: URI.encode_www_form(body),
@@ -53,7 +61,7 @@ module Amtrak
       end
 
       def session_id
-        page.headers['Set-Cookie'].match(/JSESSIONID=([^;]*)/)[1]
+        request.headers['Set-Cookie'].match(/JSESSIONID=([^;]*)/)[1]
       end
 
       def total_pages
@@ -61,7 +69,7 @@ module Amtrak
       end
 
       def extract_listing_length
-        page.body.match(/var availabilityLength = '(\d+)';/)[1]
+        request.body.match(/var availabilityLength = '(\d+)';/)[1]
       end
     end
   end
