@@ -20,6 +20,14 @@ module Amtrak
       end
 
       def request
+        retries ||= 3
+        _request
+      rescue SocketError, TimeoutError
+        retries -= 1
+        retry unless retries.zero?
+      end
+
+      def _request
         @request ||= Excon.get(
           'https://tickets.amtrak.com/itd/amtrak/TrainStatusRequest',
           headers: headers,
