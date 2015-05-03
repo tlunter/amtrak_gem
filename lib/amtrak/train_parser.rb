@@ -52,11 +52,25 @@ module Amtrak
     end
 
     def parse_train_number(node)
+      number = parse_train_number_25(node)
+      return number unless number.zero?
+
+      parse_train_number_22(node)
+    end
+
+    def parse_train_number_25(node)
       find!(
         node,
         ".//div[@id='resp_by_citypair_subheading']/\
-        div[@id='resp_by_citypair_subheading_trainname']/text()"
+        div[@id='resp_by_citypair_subheading_trainname']/div/text()"
       ).to_s.to_i
+    end
+
+    def parse_train_number_22(node)
+      node.search(
+        ".//div[@id='resp_by_citypair_subheading']/\
+        div[@id='resp_by_citypair_subheading_trainname']/text()"
+      ).first.to_s.to_i
     end
 
     def parse_train(node, cancelled) # rubocop:disable Metrics/MethodLength
@@ -87,7 +101,8 @@ module Amtrak
 
     def find(node, xpath)
       find!(node, xpath)
-    rescue RuntimeError # rubocop:disable Lint/HandleExceptions
+    rescue RuntimeError
+      nil
     end
 
     def clean_msg(time_msg)
