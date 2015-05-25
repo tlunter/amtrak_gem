@@ -36,7 +36,7 @@ module Amtrak
     def train_nodes
       @train_nodes ||= document.search(
         "//div[@id='train_status_resp_by_citypair']"
-      ).tap { |results| fail 'No trains found' unless results.count > 0 }.to_a
+      ).to_a
     end
 
     def cancelled?(node)

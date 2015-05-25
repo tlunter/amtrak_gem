@@ -15,6 +15,10 @@ module Amtrak
       @date = date
     end
 
+    def check_release
+      first_page.release == '6.25.02a'
+    end
+
     def get
       (1..total_pages).map do |page|
         Amtrak::TrainFetcher::TrainPage.get(session_id, page)

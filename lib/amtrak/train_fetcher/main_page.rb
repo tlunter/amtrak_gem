@@ -71,6 +71,10 @@ module Amtrak
       def extract_listing_length
         request.body.match(/var availabilityLength = '(\d+)';/)[1]
       end
+
+      def release
+        request.body.match(/"Amtrak Release ([^"]+)"/)[1]
+      end
     end
   end
 end
