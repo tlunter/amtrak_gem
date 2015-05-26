@@ -16,7 +16,7 @@ module Amtrak
       def request
         retries ||= 3
         _request
-      rescue SocketError, TimeoutError
+      rescue Excon::Errors::SocketError, Excon::Errors::Timeout
         retries -= 1
         retry unless retries.zero?
       end
