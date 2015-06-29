@@ -6,7 +6,7 @@ describe Amtrak::TrainFetcher::MainPage do
     let(:date) { Date.parse('2014-11-12') }
 
     it 'prints out a formatted date' do
-      expect(subject.departure_date).to eq('Wed, Nov 12, 2014')
+      expect(subject.departure_date).to eq('11/12/2014')
     end
   end
 
