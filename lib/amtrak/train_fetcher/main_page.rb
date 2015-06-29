@@ -40,7 +40,7 @@ module Amtrak
       def body
         {
           "_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']" => '',
-          "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.date" => departure_date,
+          "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.usdate" => departure_date,
           "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/@trainStatusType" => 'statusByCityPair',
           "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect" => 'arrivalTime',
           'requestor'        => 'amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler',
@@ -53,7 +53,7 @@ module Amtrak
       # rubocop:enable all
 
       def departure_date
-        date.strftime('%a, %b %-d, %Y')
+        date.strftime('%0m/%d/%Y')
       end
 
       def date
