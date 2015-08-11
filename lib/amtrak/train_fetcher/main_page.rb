@@ -69,7 +69,11 @@ module Amtrak
       end
 
       def extract_listing_length
-        request.body.match(/var availabilityLength = '(\d+)';/)[1]
+        if matches = request.body.match(/var availabilityLength = '(\d+)';/)
+          matches[1]
+        else
+          0
+        end
       end
 
       def release

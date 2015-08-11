@@ -34,7 +34,12 @@ module Amtrak
     end
 
     def total_pages
-      @total_pages ||= first_page.total_pages
+      return @total_pages if @total_pages
+
+      total_pages = first_page.total_pages
+      Amtrak.logger.debug "Total pages: #{total_pages}"
+
+      @total_pages = total_pages
     end
   end
 end
