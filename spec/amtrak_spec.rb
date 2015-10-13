@@ -4,12 +4,12 @@ describe Amtrak do
   context '.get' do
     let(:from) { 'pvd' }
     let(:to) { 'bby' }
-    let(:date) { Date.parse('Fri, Dec 5, 2014') }
+    let(:date) { Date.parse('2015-10-13') }
     let(:output) { described_class.get(from, to, date: date) }
     let(:expected) do
       JSON.parse(
         File.read(File.join('spec', 'fixtures', 'json', '_get.json')),
-        symbolize_names: true
+        symbolize_names: true,
       )
     end
 
