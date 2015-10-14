@@ -93,10 +93,10 @@ class Amtrak
   def build_time_hash(scheduled_raw, estimated_raw, posted_raw)
     {
       date: format_date(scheduled_raw),
-      scheduled_time: format_time(scheduled_raw),
-      estimated_time: format_time(estimated_raw),
-      posted_time: format_time(posted_raw),
-    }.reject { |k, v| v.nil? }
+      scheduled_time: format_time(scheduled_raw) || "",
+      estimated_time: format_time(estimated_raw) || "",
+      posted_time: format_time(posted_raw) || "",
+    }
   end
 
   def format_date(date_str)
