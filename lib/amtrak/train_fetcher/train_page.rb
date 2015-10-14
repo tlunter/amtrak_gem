@@ -1,0 +1,49 @@
+require 'excon'
+
+module Amtrak
+  class TrainFetcher
+    # Service for getting per page train time HTML from the Amtrak website
+    class TrainPage
+      def self.get(*args)
+        new(*args).get
+      end
+
+      attr_reader :session_id, :page
+
+      def initialize(session_id, page)
+        @session_id = session_id
+        @page = page
+      end
+
+      def get
+        request.body
+      end
+
+      def request
+        retries ||= 3
+        _request
+      rescue SocketError, TimeoutError
+        retries -= 1
+        retry unless retries.zero?
+      end
+
+      def _request
+        @request ||= Excon.get(
+          'https://tickets.amtrak.com/itd/amtrak/TrainStatusRequest',
+          headers: headers,
+          query: query
+        )
+      rescue Excon::Errors::ClientError, Excon::Errors::ServerError => ex
+        raise Amtrak::TrainFetcher::Error, "#{ex.class} #{ex.message}"
+      end
+
+      def headers
+        { 'Cookie' => "JSESSIONID=#{session_id}" }
+      end
+
+      def query
+        { '_trainstatuspage' => page }
+      end
+    end
+  end
+end

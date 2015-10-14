@@ -1,0 +1,198 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tickets.amtrak.com/itd/amtrak/TrainStatusRequest?_trainstatuspage=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - JSESSIONID=0000faPsyYZwp2n8Wb_4BDhukyg:187j59p07
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      Content-Length:
+      - '12911'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - _op_aixPageId=a2_daea0c65-28d7-4592-a89c-0775764abc46; Path=/, TS3f5eae=e40a68dc3507c8b74d0bc282fcc76cc4351b05b690745ca15484ab855f2a2d3e5c4d6bec;
+        Path=/
+      X-powered-by:
+      - Servlet/3.0
+      Content-Language:
+      - en-US
+      X-frame-options:
+      - SAMEORIGIN
+      Expires:
+      - Tue, 01 Jul 2003, 00:00:00 GMT
+      X-opnet-transaction-trace:
+      - a2_daea0c65-28d7-4592-a89c-0775764abc46
+      Date:
+      - Sun, 07 Dec 2014 19:33:27 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\r\n\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair_heading\">\r\n\r\n<div
+        id=\"resp_by_citypair_heading_left\">\r\n<div>PVD</div>\r\n<div id=\"resp_by_citypair_heading_line2\">Providence,
+        RI</div>\r\n</div>\r\n<div id=\"resp_by_citypair_heading_middle\">\r\n<img
+        alt=\"\" src=\"/images/en/station-to-station-arrow.png\" />\r\n</div>\r\n<div
+        id=\"resp_by_citypair_heading_right\">\r\n<div>BBY</div>\r\n<div id=\"resp_by_citypair_heading_line2\">Boston,
+        MA</div>\r\n</div>\r\n\r\n</div>\r\n<div id=\"train_status_spacing1\"></div>\r\n\r\n\r\n<div
+        id=\"train_status_resp_by_citypair\">\r\n<div id=\"resp_by_citypair_subheading\">\r\n<div
+        id=\"resp_by_citypair_subheading_trainname\">\r\n178&nbsp;Northeast Regional\r\n</div>\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div class=\"statusDetailsSection\">\r\n<div
+        class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div class=\"arriveDepartDelayedMsg\">
+        Departed</div>\r\n<div class=\"delayedMsg\">4 minutes late</div>\r\n\r\n<div
+        class=\"arriveDepartTime\">11:41 pm</div>\r\n<div class=\"arriveDepartDate\">Fri,
+        Dec 5 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;11:37 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/ontime-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartOntimeMsg\"> Arrived</div>\r\n<div class=\"ontimeMsg\">9
+        minutes early</div>\r\n\r\n\r\n<div class=\"arriveDepartTime\">12:15 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;12:24 am\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n66&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartOntimeMsg\"> Departed</div>\r\n<div class=\"ontimeMsg\">On
+        time</div>\r\n\r\n\r\n<div class=\"arriveDepartTime\">6:56 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;6:56 am\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">2
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">7:54 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;7:53 am\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n150&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">10
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">10:35 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;10:25 am\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">4
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">11:13 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;11:09 am\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n2290&nbsp;Acela
+        Express\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">13
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">11:10 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;10:57 am\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">10
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">11:49 am</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;11:39 am\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n160&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">10
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">12:35 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;12:25 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">2
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">1:10 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;1:10 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n162&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">43
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">2:11 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;1:28 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">37
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">2:48 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;2:13 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n2250&nbsp;Acela
+        Express\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">22
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">3:20 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;2:58 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">15
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">3:56 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;3:41 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n164&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"statusUnavailableMsg\">Status currently unavailable</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;4:30 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img
+        src=\"/images/en/no-status-available-origin.png\" />\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div class=\"statusDetailsSection\">\r\n<div
+        class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"statusUnavailableMsg\">Status currently unavailable</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;5:13 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n82&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">2
+        minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">5:28 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;5:26 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/ontime-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartOntimeMsg\"> Arrived</div>\r\n<div class=\"ontimeMsg\">4
+        minutes early</div>\r\n\r\n\r\n<div class=\"arriveDepartTime\">6:04 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;6:10 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n<div id=\"train_status_resp_by_citypair\">\r\n<div
+        id=\"resp_by_citypair_subheading\">\r\n<div id=\"resp_by_citypair_subheading_trainname\">\r\n88&nbsp;Northeast
+        Regional\r\n</div>\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_depart_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">PVD</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Departed</div>\r\n<div class=\"delayedMsg\">
+        23 minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">6:50 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n<div class=\"scheduledArriveDepartMsg\">\r\nScheduled
+        Departure&nbsp;6:27 pm\r\n</div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"resp_by_citypair_arrow_img\">\r\n\r\n\r\n\r\n\r\n\r\n\r\n<img src=\"/images/en/delayed-arrived.png\"
+        />\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n\r\n<div id=\"resp_by_citypair_arrive_status_details\">\r\n\r\n\r\n<div
+        class=\"statusDetailsSection\">\r\n<div class=\"cityName\">BBY</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"arriveDepartDelayedMsg\"> Arrived</div>\r\n<div class=\"delayedMsg\">
+        14 minutes late</div>\r\n\r\n<div class=\"arriveDepartTime\">7:28 pm</div>\r\n<div
+        class=\"arriveDepartDate\">Sat, Dec 6 2014</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div
+        class=\"scheduledArriveDepartMsg\">\r\nScheduled Arrival&nbsp;7:14 pm\r\n</div>\r\n\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        id=\"train_status_spacing\"></div>\r\n\r\n\r\n\r\n"
+    http_version: 
+  recorded_at: Sun, 07 Dec 2014 19:33:27 GMT
+recorded_with: VCR 2.9.3

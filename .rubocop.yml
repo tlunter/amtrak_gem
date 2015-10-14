@@ -1,8 +1,6 @@
 Lint/AssignmentInCondition:
   Enabled: false
 Metrics/MethodLength:
-  Max: 13
+  Max: 12
 Metrics/LineLength:
   Max: 100
-Style/TrailingComma:
-  EnforcedStyleForMultiline: consistent_comma
