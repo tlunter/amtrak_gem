@@ -53,7 +53,7 @@ class Amtrak
 
   def transform_segment(segment)
     {
-      number: segment['trainNumber'],
+      number: segment['trainNumber'].to_i,
       departure: build_time_hash(
         segment['originScheduledDepartureDateTime'],
         segment['originEstimatedDepartureDateTime'],
