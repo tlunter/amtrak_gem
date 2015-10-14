@@ -75,7 +75,7 @@ class Amtrak
       expects: [200, 302],
     )
   rescue Excon::Errors::ClientError, Excon::Errors::ServerError => ex
-    raise Amtrak::TrainFetcher::Error, "#{ex.class} #{ex.message}"
+    raise Amtrak::Error, "#{ex.class} #{ex.message}"
   end
 
   def boilerplate_body
