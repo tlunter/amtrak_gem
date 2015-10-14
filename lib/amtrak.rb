@@ -95,8 +95,8 @@ class Amtrak
       date: format_date(scheduled_raw),
       scheduled_time: format_time(scheduled_raw),
       estimated_time: format_time(estimated_raw),
-      #posted_time: format_time(posted_raw),
-    }
+      posted_time: format_time(posted_raw),
+    }.reject { |k, v| v.nil? }
   end
 
   def format_date(date_str)
