@@ -1,1 +1,54 @@
-[{"number":178,"departure":{"date":"Thu, Dec 4 2014","scheduled_time":"11:37 pm","estimated_time":"11:37 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"12:24 am","estimated_time":"12:08 am"}},{"number":66,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"6:56 am","estimated_time":"6:57 am"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"7:53 am","estimated_time":"7:46 am"}},{"number":2190,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"9:18 am","estimated_time":"9:30 am"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"9:59 am","estimated_time":"9:59 am"}},{"number":190,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"10:17 am","estimated_time":"10:30 am"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"10:59 am","estimated_time":"11:01 am"}},{"number":2150,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"10:53 am","estimated_time":"11:09 am"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"11:34 am","estimated_time":"11:38 am"}},{"number":170,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"11:58 am","estimated_time":"12:14 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"12:39 pm","estimated_time":"12:48 pm"}},{"number":2154,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"12:55 pm","estimated_time":"1:04 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"1:34 pm","estimated_time":"1:39 pm"}},{"number":172,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"2:23 pm","estimated_time":"2:47 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"3:09 pm","estimated_time":"3:21 pm"}},{"number":2158,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"2:54 pm","estimated_time":"3:09 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"3:36 pm","estimated_time":"3:40 pm"}},{"number":86,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"3:47 pm","estimated_time":"3:47 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"4:28 pm","estimated_time":"4:19 pm"}},{"number":2160,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"3:54 pm","estimated_time":"4:26 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"4:34 pm","estimated_time":"4:58 pm"}},{"number":174,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"5:30 pm","estimated_time":"5:36 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"6:25 pm","estimated_time":"6:32 pm"}},{"number":2164,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"5:50 pm","estimated_time":"5:59 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"6:34 pm","estimated_time":""}},{"number":2166,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"6:54 pm","estimated_time":"7:13 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"7:35 pm","estimated_time":"7:45 pm"}},{"number":176,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"7:19 pm","estimated_time":"8:45 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"8:06 pm","estimated_time":"9:29 pm"}},{"number":2168,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"7:56 pm","estimated_time":""},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"8:38 pm","estimated_time":""}},{"number":2170,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"8:54 pm","estimated_time":"9:41 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"9:34 pm","estimated_time":""}},{"number":94,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"9:16 pm","estimated_time":"10:21 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"10:02 pm","estimated_time":"11:02 pm"}},{"number":2172,"departure":{"date":"Fri, Dec 5 2014","scheduled_time":"9:54 pm","estimated_time":"10:08 pm"},"arrival":{"date":"Fri, Dec 5 2014","scheduled_time":"10:35 pm","estimated_time":"10:42 pm"}}]
+[
+  {
+    "number": 194,
+    "departure": {
+      "date": "Sun, Jan 3 2016",
+      "scheduled_time": "8:25 pm",
+      "estimated_time": "8:29 pm"
+    },
+    "arrival": {
+      "date": "Sun, Jan 3 2016",
+      "scheduled_time": "9:10 pm",
+      "estimated_time": "9:00 pm"
+    }
+  },
+  {
+    "number": 2256,
+    "departure": {
+      "date": "Sun, Jan 3 2016",
+      "scheduled_time": "8:55 pm",
+      "estimated_time": ""
+    },
+    "arrival": {
+      "date": "Sun, Jan 3 2016",
+      "scheduled_time": "9:39 pm",
+      "estimated_time": ""
+    }
+  },
+  {
+    "number": 2258,
+    "departure": {
+      "date": "Sun, Jan 3 2016",
+      "scheduled_time": "9:54 pm",
+      "estimated_time": "9:59 pm"
+    },
+    "arrival": {
+      "date": "Sun, Jan 3 2016",
+      "scheduled_time": "10:40 pm",
+      "estimated_time": "10:38 pm"
+    }
+  },
+  {
+    "number": 132,
+    "departure": {
+      "date": "Sun, Jan 3 2016",
+      "scheduled_time": "11:02 pm",
+      "estimated_time": "11:03 pm"
+    },
+    "arrival": {
+      "date": "Sun, Jan 3 2016",
+      "scheduled_time": "11:49 pm",
+      "estimated_time": "11:35 pm"
+    }
+  }
+]

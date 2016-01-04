@@ -23,7 +23,7 @@ module Amtrak
 
       def _request
         @request ||= Excon.post(
-          'http://tickets.amtrak.com/itd/amtrak',
+          'https://tickets.amtrak.com/itd/amtrak',
           headers: headers,
           body: URI.encode_www_form(body),
           expects: [200]
@@ -39,11 +39,11 @@ module Amtrak
       # rubocop:disable all
       def body
         {
-          "_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']" => '',
+          "_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']" => 'SEARCH',
           "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.usdate" => departure_date,
           "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/@trainStatusType" => 'statusByCityPair',
           "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect" => 'arrivalTime',
-          'requestor'        => 'amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler',
+          'requestor'        => 'amtrak.presentation.handler.page.AmtrakCMSNavigationTabPageHandler',
           'xwdf_origin'      => "/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/departLocation/search",
           'wdf_origin'       => from.to_s,
           'xwdf_destination' => "/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/arriveLocation/search",

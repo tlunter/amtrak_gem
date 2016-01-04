@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Amtrak::TrainFetcher do
   describe '.get', :vcr do
     let(:output) do
-      described_class.get('pvd', 'bby', date: Date.parse('2014-12-07'))
+      described_class.get('pvd', 'bby', date: Date.parse('2015-12-31'))
     end
 
     it 'does the same as #get' do
@@ -16,7 +16,7 @@ describe Amtrak::TrainFetcher do
   describe '#get', :vcr do
     describe 'given a valid date and train stations' do
       subject do
-        described_class.new('pvd', 'bby', date: Date.parse('2014-12-07'))
+        described_class.new('pvd', 'bby', date: Date.parse('2015-12-31'))
       end
 
       let(:output) { subject.get }
@@ -44,7 +44,7 @@ describe Amtrak::TrainFetcher do
 
     describe 'given a valid date and invalid train stations' do
       subject do
-        described_class.new('askdf', 'bby', date: Date.parse('2014-12-07'))
+        described_class.new('askdf', 'bby', date: Date.parse('2015-12-31'))
       end
 
       let(:output) { subject.get }

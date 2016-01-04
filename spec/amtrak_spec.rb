@@ -4,7 +4,7 @@ describe Amtrak do
   context '.get' do
     let(:from) { 'pvd' }
     let(:to) { 'bby' }
-    let(:date) { Date.parse('Fri, Dec 5, 2014') }
+    let(:date) { Date.parse('Sat, Jan 3, 2016') }
     let(:output) { described_class.get(from, to, date: date) }
     let(:expected) do
       JSON.parse(
@@ -14,6 +14,7 @@ describe Amtrak do
     end
 
     it 'returns a list of train times', :vcr do
+      puts JSON.pretty_generate(output)
       expect(output).to eq(expected)
     end
   end
