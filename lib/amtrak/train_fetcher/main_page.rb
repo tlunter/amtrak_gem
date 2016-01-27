@@ -39,21 +39,21 @@ module Amtrak
       # rubocop:disable all
       def body
         {
-          "_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']" => 'SEARCH',
+          "_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']" => "",
           "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.usdate" => departure_date,
-          "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/@trainStatusType" => 'statusByCityPair',
-          "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect" => 'arrivalTime',
-          'requestor'        => 'amtrak.presentation.handler.page.AmtrakCMSNavigationTabPageHandler',
-          'xwdf_origin'      => "/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/departLocation/search",
-          'wdf_origin'       => from.to_s,
-          'xwdf_destination' => "/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/arriveLocation/search",
-          'wdf_destination'  => to.to_s,
+          "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/@trainStatusType" => "statusByCityPair",
+          "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate/@radioSelect" => "arrivalTime",
+          "requestor"        => "amtrak.presentation.handler.page.rail.AmtrakRailGetTrainStatusPageHandler",
+          "xwdf_origin"      => "/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/departLocation/search",
+          "wdf_origin"       => from.to_s,
+          "xwdf_destination" => "/sessionWorkflow/productWorkflow[@product='Rail']/travelSelection/journeySelection[1]/arriveLocation/search",
+          "wdf_destination"  => to.to_s,
         }
       end
       # rubocop:enable all
 
       def departure_date
-        date.strftime('%0m/%d/%Y')
+        date.strftime("%0m/%d/%Y")
       end
 
       def date
@@ -61,7 +61,7 @@ module Amtrak
       end
 
       def session_id
-        request.headers['Set-Cookie'].match(/JSESSIONID=([^;]*)/)[1]
+        request.headers["Set-Cookie"].match(/JSESSIONID=([^;]*)/)[1]
       end
 
       def total_pages

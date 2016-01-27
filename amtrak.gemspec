@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'excon', '~> 0.41.0'
+  spec.add_dependency 'excon', '~> 0.41'
   spec.add_dependency 'nokogiri', '~> 1.6.4'
 
   spec.add_development_dependency 'rake'
