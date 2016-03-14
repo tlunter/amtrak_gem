@@ -1,13 +1,13 @@
-require 'excon'
 require 'date'
 
 module Amtrak
   class TrainFetcher
     # Service for getting train time results/cookies from the Amtrak website
     class MainPage
-      attr_reader :from, :to
+      attr_reader :agent, :from, :to
 
-      def initialize(from, to, date: nil)
+      def initialize(agent, from, to, date: nil)
+        @agent = agent
         @from = from
         @to = to
         @date = date
@@ -16,20 +16,19 @@ module Amtrak
       def request
         retries ||= 3
         _request
-      rescue Excon::Errors::SocketError, Excon::Errors::Timeout
+      rescue Mechanize::ResponseCodeError
         retries -= 1
-        retry unless retries.zero?
+        raise if retries.zero?
+
+        retry
       end
 
       def _request
-        @request ||= Excon.post(
+        @request ||= agent.post(
           'https://tickets.amtrak.com/itd/amtrak',
-          headers: headers,
-          body: URI.encode_www_form(body),
-          expects: [200]
+          request_body,
+          headers
         )
-      rescue Excon::Errors::ClientError, Excon::Errors::ServerError => ex
-        raise Amtrak::TrainFetcher::Error, "#{ex.class} #{ex.message}"
       end
 
       def headers
@@ -37,7 +36,7 @@ module Amtrak
       end
 
       # rubocop:disable all
-      def body
+      def request_body
         {
           "_handler=amtrak.presentation.handler.request.rail.AmtrakRailTrainStatusSearchRequestHandler/_xpath=/sessionWorkflow/productWorkflow[@product='Rail']" => "",
           "/sessionWorkflow/productWorkflow[@product='Rail']/tripRequirements/journeyRequirements[1]/departDate.usdate" => departure_date,
@@ -53,15 +52,15 @@ module Amtrak
       # rubocop:enable all
 
       def departure_date
-        date.strftime("%0m/%d/%Y")
+        date.strftime('%0m/%d/%Y')
       end
 
       def date
         @date ||= Date.today
       end
 
-      def session_id
-        request.headers["Set-Cookie"].match(/JSESSIONID=([^;]*)/)[1]
+      def body
+        request.body
       end
 
       def total_pages
@@ -69,7 +68,7 @@ module Amtrak
       end
 
       def extract_listing_length
-        if matches = request.body.match(/var availabilityLength = '(\d+)';/)
+        if matches = body.match(/var availabilityLength = '(\d+)';/)
           matches[1]
         else
           0
@@ -77,7 +76,7 @@ module Amtrak
       end
 
       def release
-        request.body.match(/"Amtrak Release ([^"]+)"/)[1]
+        body.match(/"Amtrak Release ([^"]+)"/)[1]
       end
     end
   end

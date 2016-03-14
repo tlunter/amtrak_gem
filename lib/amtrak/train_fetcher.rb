@@ -1,3 +1,5 @@
+require 'mechanize'
+
 module Amtrak
   # Service for getting train time HTML page from the Amtrak website
   class TrainFetcher
@@ -20,17 +22,17 @@ module Amtrak
     end
 
     def get
-      (1..total_pages).map do |page|
-        Amtrak::TrainFetcher::TrainPage.get(session_id, page)
+      requests = [first_page.body]
+
+      (2..total_pages).each do |page|
+        requests << Amtrak::TrainFetcher::TrainPage.get(agent, page)
       end
+
+      requests
     end
 
     def first_page
-      @first_page ||= Amtrak::TrainFetcher::MainPage.new(from, to, date: date)
-    end
-
-    def session_id
-      @session_id ||= first_page.session_id
+      @first_page ||= Amtrak::TrainFetcher::MainPage.new(agent, from, to, date: date)
     end
 
     def total_pages
@@ -40,6 +42,13 @@ module Amtrak
       Amtrak.logger.debug "Total pages: #{total_pages}"
 
       @total_pages = total_pages
+    end
+
+    def agent
+      @agent ||= Mechanize.new.tap do |m|
+        m.user_agent_alias = 'Mac Safari'
+        m.log = Amtrak.logger
+      end
     end
   end
 end

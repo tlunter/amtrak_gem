@@ -1,5 +1,3 @@
-require 'excon'
-
 module Amtrak
   class TrainFetcher
     # Service for getting per page train time HTML from the Amtrak website
@@ -8,10 +6,10 @@ module Amtrak
         new(*args).get
       end
 
-      attr_reader :session_id, :page
+      attr_reader :agent, :page
 
-      def initialize(session_id, page)
-        @session_id = session_id
+      def initialize(agent, page)
+        @agent = agent
         @page = page
       end
 
@@ -22,23 +20,28 @@ module Amtrak
       def request
         retries ||= 3
         _request
-      rescue SocketError, TimeoutError
+      rescue Mechanize::ResponseCodeError
         retries -= 1
-        retry unless retries.zero?
+        raise if retries.zero?
+
+        retry
       end
 
       def _request
-        @request ||= Excon.get(
-          'https://tickets.amtrak.com/itd/amtrak/TrainStatusRequest',
-          headers: headers,
-          query: query
+        @request ||= agent.get(
+          "https://tickets.amtrak.com/itd/amtrak/TrainStatusRequest?&_trainstatuspage=#{page}",
+          [],
+          nil,
+          headers
         )
-      rescue Excon::Errors::ClientError, Excon::Errors::ServerError => ex
-        raise Amtrak::TrainFetcher::Error, "#{ex.class} #{ex.message}"
       end
 
       def headers
-        { 'Cookie' => "JSESSIONID=#{session_id}" }
+        {
+          'ADRUM' => 'isAjax:true',
+          'X-Prototype-Version' => '1.6.0.3',
+          'X-Requested-With' => 'XMLHttpRequest'
+        }
       end
 
       def query
