@@ -1,5 +1,5 @@
 ## Amtrak
-### Pulls down the train times from the Amtrak website
+### Pulls Amtrak train scheduled and estimated departure times 
 
 #### Installation
 
@@ -22,7 +22,6 @@ In a terminal window, run:
 ```
 $ bundle install
 $ git add Gemfile Gemfile.lock
-
 ```
 
 #### Usage
