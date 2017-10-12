@@ -1,54 +1,249 @@
 [
   {
-    "number": 194,
+    "number": 178,
     "departure": {
-      "date": "Sun, Jan 3 2016",
-      "scheduled_time": "8:25 pm",
-      "estimated_time": "8:29 pm"
+      "date": "2017-10-11",
+      "scheduled_time": "23:29:00",
+      "estimated_time": "23:29:00"
     },
     "arrival": {
-      "date": "Sun, Jan 3 2016",
-      "scheduled_time": "9:10 pm",
-      "estimated_time": "9:00 pm"
+      "date": "2017-10-11",
+      "scheduled_time": "23:29:00",
+      "estimated_time": "23:29:00"
     }
   },
   {
-    "number": 2256,
+    "number": 66,
     "departure": {
-      "date": "Sun, Jan 3 2016",
-      "scheduled_time": "8:55 pm",
-      "estimated_time": ""
+      "date": "2017-10-12",
+      "scheduled_time": "06:56:00",
+      "estimated_time": "06:56:00"
     },
     "arrival": {
-      "date": "Sun, Jan 3 2016",
-      "scheduled_time": "9:39 pm",
-      "estimated_time": ""
+      "date": "2017-10-12",
+      "scheduled_time": "06:56:00",
+      "estimated_time": "06:56:00"
     }
   },
   {
-    "number": 2258,
+    "number": 2190,
     "departure": {
-      "date": "Sun, Jan 3 2016",
-      "scheduled_time": "9:54 pm",
-      "estimated_time": "9:59 pm"
+      "date": "2017-10-12",
+      "scheduled_time": "09:20:00",
+      "estimated_time": null
     },
     "arrival": {
-      "date": "Sun, Jan 3 2016",
-      "scheduled_time": "10:40 pm",
-      "estimated_time": "10:38 pm"
+      "date": "2017-10-12",
+      "scheduled_time": "09:20:00",
+      "estimated_time": null
     }
   },
   {
-    "number": 132,
+    "number": 190,
     "departure": {
-      "date": "Sun, Jan 3 2016",
-      "scheduled_time": "11:02 pm",
-      "estimated_time": "11:03 pm"
+      "date": "2017-10-12",
+      "scheduled_time": "10:17:00",
+      "estimated_time": null
     },
     "arrival": {
-      "date": "Sun, Jan 3 2016",
-      "scheduled_time": "11:49 pm",
-      "estimated_time": "11:35 pm"
+      "date": "2017-10-12",
+      "scheduled_time": "10:17:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 2150,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "10:53:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "10:53:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 170,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "11:55:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "11:55:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 2154,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "12:56:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "12:56:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 172,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "14:23:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "14:23:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 2158,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "14:59:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "14:59:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 86,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "15:47:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "15:47:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 2160,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "16:02:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "16:02:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 174,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "17:30:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "17:30:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 2164,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "17:51:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "17:51:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 2166,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "18:54:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "18:54:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 176,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "19:19:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "19:19:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 2168,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "19:56:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "19:56:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 2170,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "20:54:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "20:54:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 94,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "21:16:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "21:16:00",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 2172,
+    "departure": {
+      "date": "2017-10-12",
+      "scheduled_time": "22:03:00",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2017-10-12",
+      "scheduled_time": "22:03:00",
+      "estimated_time": null
     }
   }
 ]

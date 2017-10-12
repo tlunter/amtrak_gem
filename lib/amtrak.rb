@@ -9,9 +9,8 @@ module Amtrak
   end
 
   def self.get(from, to, date: nil)
-    Amtrak::TrainFetcher.get(from, to, date: date).map do |html|
-      Amtrak::TrainParser.parse(html)
-    end.flatten
+    json = Amtrak::TrainFetcher.get(from, to, date: date)
+    Amtrak::TrainParser.parse(json)
   end
 end
 

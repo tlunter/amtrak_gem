@@ -1,10 +1,9 @@
-require 'mechanize'
+require 'json'
+require 'excon'
 
 module Amtrak
   # Service for getting train time HTML page from the Amtrak website
   class TrainFetcher
-    class Error < Amtrak::Error; end
-
     def self.get(*args)
       new(*args).get
     end
@@ -14,7 +13,7 @@ module Amtrak
     def initialize(from, to, date: nil)
       @from = from
       @to = to
-      @date = date
+      @date = date || Date.today
     end
 
     def check_release
@@ -22,36 +21,34 @@ module Amtrak
     end
 
     def get
-      requests = [first_page.body]
-
-      (2..total_pages).each do |page|
-        requests << Amtrak::TrainFetcher::TrainPage.get(agent, page)
-      end
-
-      requests
+      JSON.parse(response.body)
     end
 
-    def first_page
-      @first_page ||= Amtrak::TrainFetcher::MainPage.new(agent, from, to, date: date)
+    private
+
+    def response
+      Excon.post(
+        'https://rider.amtrak.com/MobileApps/TrainStatus',
+        body: body.to_json,
+        headers: headers
+      )
     end
 
-    def total_pages
-      return @total_pages if @total_pages
-
-      total_pages = first_page.total_pages
-      Amtrak.logger.debug "Total pages: #{total_pages}"
-
-      @total_pages = total_pages
+    def body
+      {
+        'dateTime' => date.strftime('%Y-%0m-%d'),
+        'origin' => from.upcase,
+        'destination' => to.upcase,
+        'type' => 'A',
+        'versionNumber' => '2.2.12'
+      }
     end
 
-    def agent
-      @agent ||= Mechanize.new.tap do |m|
-        m.user_agent_alias = 'Mac Safari'
-        m.log = Amtrak.logger
-      end
+    def headers
+      {
+        'Accept' => '*/*',
+        'Content-Type' => 'application/json'
+      }
     end
   end
 end
-
-require 'amtrak/train_fetcher/main_page'
-require 'amtrak/train_fetcher/train_page'

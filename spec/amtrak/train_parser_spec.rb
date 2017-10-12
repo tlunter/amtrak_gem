@@ -1,52 +1,22 @@
 require 'spec_helper'
 
 describe Amtrak::TrainParser do
-  describe '#clean_msg' do
-    subject { described_class.new('') }
-    let(:output) { subject.clean_msg(message) }
-
-    context 'on a string with no time' do
-      let(:message) { 'Scheduled arrival' }
-      let(:expected) { nil }
-
-      it 'returns nil' do
-        expect(output).to eq(expected)
-      end
-    end
-
-    context 'on a string with a time' do
-      let(:message) { 'Scheduled arrival 3:30 pm' }
-      let(:expected) { '3:30 pm' }
-
-      it 'returns the time' do
-        expect(output).to eq(expected)
-      end
-    end
-
-    context 'on a string with only a time' do
-      let(:message) { '3:30 pm' }
-      let(:expected) { '3:30 pm' }
-
-      it 'returns the time' do
-        expect(output).to eq(expected)
-      end
-    end
-  end
-
   describe '.parse' do
     let(:parser) { double(Amtrak::TrainParser) }
+
     it 'calls new and parse' do
-      expect(described_class).to receive(:new).with('') { parser }
+      expect(described_class).to receive(:new).with('journeys' => []) { parser }
       expect(parser).to receive(:parse)
-      described_class.parse('')
+      described_class.parse('journeys' => [])
     end
   end
 
   describe '#parse' do
-    subject { described_class.new(document) }
+    subject { described_class.new(json) }
     let(:output) { subject.parse }
+    let(:json) { JSON.parse(document) }
     let(:document) do
-      File.read(File.join('spec', 'fixtures', 'html', 'pvd_to_bby.html'))
+      File.read(File.join('spec', 'fixtures', 'json', 'pvd_to_bby.json'))
     end
     let(:expected) do
       JSON.parse(
@@ -55,34 +25,8 @@ describe Amtrak::TrainParser do
       )
     end
 
-    context 'without an error' do
-      it 'returns a list of train times' do
-        expect(output).to eq(expected)
-      end
-
-      context 'with an error' do
-        it 'raises a TrainParser::Error' do
-          expect(subject.document).to receive(:search) {
-            fail Nokogiri::SyntaxError
-          }
-          expect { output }.to raise_error(Amtrak::TrainParser::Error)
-        end
-      end
-
-      context 'with a cancelled train' do
-        let(:document) do
-          File.read(File.join('spec', 'fixtures', 'html', 'pvd_to_bby_cancelled.html'))
-        end
-        let(:expected) do
-          JSON.parse(
-            File.read(File.join('spec', 'fixtures', 'json', '_parse_cancelled.json')),
-            symbolize_names: true
-          )
-        end
-        it 'returns a list with some trains marked Cancelled' do
-          expect(output).to eq(expected)
-        end
-      end
+    it 'returns a list of train times' do
+      expect(output).to eq(expected)
     end
   end
 end
