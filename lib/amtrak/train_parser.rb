@@ -38,8 +38,8 @@ module Amtrak
 
       {
         date: date,
-        scheduled_time: scheduled_time,
-        estimated_time: estimated_time
+        scheduled_time: format_time(scheduled_time),
+        estimated_time: format_time(estimated_time)
       }
     end
 
@@ -50,9 +50,17 @@ module Amtrak
 
       {
         date: date,
-        scheduled_time: scheduled_time,
-        estimated_time: estimated_time
+        scheduled_time: format_time(scheduled_time),
+        estimated_time: format_time(estimated_time)
       }
+    end
+
+    private
+
+    def format_time(time)
+      return unless time
+
+      Time.parse(time).strftime('%l:%M %P')
     end
   end
 end

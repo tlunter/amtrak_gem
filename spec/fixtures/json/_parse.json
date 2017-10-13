@@ -3,38 +3,38 @@
     "number": 178,
     "departure": {
       "date": "2017-10-11",
-      "scheduled_time": "23:29:00",
-      "estimated_time": "23:29:00"
+      "scheduled_time": "11:29 pm",
+      "estimated_time": "11:29 pm"
     },
     "arrival": {
       "date": "2017-10-11",
-      "scheduled_time": "23:29:00",
-      "estimated_time": "23:29:00"
+      "scheduled_time": "11:29 pm",
+      "estimated_time": "11:29 pm"
     }
   },
   {
     "number": 66,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "06:56:00",
-      "estimated_time": "06:56:00"
+      "scheduled_time": " 6:56 am",
+      "estimated_time": " 6:56 am"
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "06:56:00",
-      "estimated_time": "06:56:00"
+      "scheduled_time": " 6:56 am",
+      "estimated_time": " 6:56 am"
     }
   },
   {
     "number": 2190,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "09:20:00",
+      "scheduled_time": " 9:20 am",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "09:20:00",
+      "scheduled_time": " 9:20 am",
       "estimated_time": null
     }
   },
@@ -42,12 +42,12 @@
     "number": 190,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "10:17:00",
+      "scheduled_time": "10:17 am",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "10:17:00",
+      "scheduled_time": "10:17 am",
       "estimated_time": null
     }
   },
@@ -55,12 +55,12 @@
     "number": 2150,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "10:53:00",
+      "scheduled_time": "10:53 am",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "10:53:00",
+      "scheduled_time": "10:53 am",
       "estimated_time": null
     }
   },
@@ -68,12 +68,12 @@
     "number": 170,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "11:55:00",
+      "scheduled_time": "11:55 am",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "11:55:00",
+      "scheduled_time": "11:55 am",
       "estimated_time": null
     }
   },
@@ -81,12 +81,12 @@
     "number": 2154,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "12:56:00",
+      "scheduled_time": "12:56 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "12:56:00",
+      "scheduled_time": "12:56 pm",
       "estimated_time": null
     }
   },
@@ -94,12 +94,12 @@
     "number": 172,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "14:23:00",
+      "scheduled_time": " 2:23 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "14:23:00",
+      "scheduled_time": " 2:23 pm",
       "estimated_time": null
     }
   },
@@ -107,12 +107,12 @@
     "number": 2158,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "14:59:00",
+      "scheduled_time": " 2:59 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "14:59:00",
+      "scheduled_time": " 2:59 pm",
       "estimated_time": null
     }
   },
@@ -120,12 +120,12 @@
     "number": 86,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "15:47:00",
+      "scheduled_time": " 3:47 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "15:47:00",
+      "scheduled_time": " 3:47 pm",
       "estimated_time": null
     }
   },
@@ -133,12 +133,12 @@
     "number": 2160,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "16:02:00",
+      "scheduled_time": " 4:02 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "16:02:00",
+      "scheduled_time": " 4:02 pm",
       "estimated_time": null
     }
   },
@@ -146,12 +146,12 @@
     "number": 174,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "17:30:00",
+      "scheduled_time": " 5:30 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "17:30:00",
+      "scheduled_time": " 5:30 pm",
       "estimated_time": null
     }
   },
@@ -159,12 +159,12 @@
     "number": 2164,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "17:51:00",
+      "scheduled_time": " 5:51 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "17:51:00",
+      "scheduled_time": " 5:51 pm",
       "estimated_time": null
     }
   },
@@ -172,12 +172,12 @@
     "number": 2166,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "18:54:00",
+      "scheduled_time": " 6:54 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "18:54:00",
+      "scheduled_time": " 6:54 pm",
       "estimated_time": null
     }
   },
@@ -185,12 +185,12 @@
     "number": 176,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "19:19:00",
+      "scheduled_time": " 7:19 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "19:19:00",
+      "scheduled_time": " 7:19 pm",
       "estimated_time": null
     }
   },
@@ -198,12 +198,12 @@
     "number": 2168,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "19:56:00",
+      "scheduled_time": " 7:56 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "19:56:00",
+      "scheduled_time": " 7:56 pm",
       "estimated_time": null
     }
   },
@@ -211,12 +211,12 @@
     "number": 2170,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "20:54:00",
+      "scheduled_time": " 8:54 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "20:54:00",
+      "scheduled_time": " 8:54 pm",
       "estimated_time": null
     }
   },
@@ -224,12 +224,12 @@
     "number": 94,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "21:16:00",
+      "scheduled_time": " 9:16 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "21:16:00",
+      "scheduled_time": " 9:16 pm",
       "estimated_time": null
     }
   },
@@ -237,12 +237,12 @@
     "number": 2172,
     "departure": {
       "date": "2017-10-12",
-      "scheduled_time": "22:03:00",
+      "scheduled_time": "10:03 pm",
       "estimated_time": null
     },
     "arrival": {
       "date": "2017-10-12",
-      "scheduled_time": "22:03:00",
+      "scheduled_time": "10:03 pm",
       "estimated_time": null
     }
   }
