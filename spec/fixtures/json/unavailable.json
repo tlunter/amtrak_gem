@@ -1,0 +1,16 @@
+{
+  "appVersion": "1.51",
+  "authenticationToken": null,
+  "buildNumber": "1.51_20170909.0300",
+  "errors": [
+    {
+      "ariesMessage": "008INVALID DATE 09OCT",
+      "code": "15",
+      "text": "Train Status is currently unavailable. Please try again later [R412]",
+      "type": "3"
+    }
+  ],
+  "hostName": "ussbpri031amtra",
+  "infoNotification": null,
+  "responseCode": "ERROR"
+}

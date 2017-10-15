@@ -15,7 +15,7 @@ module Amtrak
     end
 
     def parse
-      json['journeys']
+      (json['journeys'] || [])
         .map(&method(:parse_journey))
         .compact
     end

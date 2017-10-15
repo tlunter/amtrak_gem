@@ -28,5 +28,25 @@ describe Amtrak::TrainParser do
     it 'returns a list of train times' do
       expect(output).to eq(expected)
     end
+
+    context 'when the train status is unavailable' do
+      let(:document) do
+        File.read(File.join('spec', 'fixtures', 'json', 'unavailable.json'))
+      end
+
+      it 'does not return any trains' do
+        expect(output).to eq([])
+      end
+    end
+
+    context 'when the train is not operated by amtrak' do
+      let(:document) do
+        File.read(File.join('spec', 'fixtures', 'json', 'not_operated_by_amtrak.json'))
+      end
+
+      it 'does not return any trains' do
+        expect(output).to eq([])
+      end
+    end
   end
 end

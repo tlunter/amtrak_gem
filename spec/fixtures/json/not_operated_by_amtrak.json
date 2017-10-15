@@ -1,0 +1,16 @@
+{
+  "appVersion": "1.51",
+  "authenticationToken": null,
+  "buildNumber": "1.51_20170909.0300",
+  "errors": [
+    {
+      "ariesMessage": "011NO TRAIN SERVICE FOR THIS DATE",
+      "code": "3",
+      "text": "The train number provided is not operated by Amtrak. Please check the number or try a search using two stations.  [011A]",
+      "type": "3"
+    }
+  ],
+  "hostName": "ussbpri021amtra",
+  "infoNotification": null,
+  "responseCode": "ERROR"
+}
