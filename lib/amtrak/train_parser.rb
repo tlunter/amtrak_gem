@@ -44,8 +44,8 @@ module Amtrak
     end
 
     def find_arrival_times(segment)
-      date, scheduled_time = segment['originScheduledDepartureDateTime'].split('T')
-      estimated_arrival = segment['originEstimatedDepartureDateTime']
+      date, scheduled_time = segment['destinationScheduledArrivalDateTime'].split('T')
+      estimated_arrival = segment['destinationEstimatedArrivalDateTime']
       _, estimated_time = estimated_arrival.split('T') if estimated_arrival
 
       {
