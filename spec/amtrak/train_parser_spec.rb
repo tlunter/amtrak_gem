@@ -29,6 +29,22 @@ describe Amtrak::TrainParser do
       expect(output).to eq(expected)
     end
 
+    context 'when the train status is canceled' do
+      let(:document) do
+        File.read(File.join('spec', 'fixtures', 'json', 'canceled.json'))
+      end
+      let(:expected) do
+        JSON.parse(
+          File.read(File.join('spec', 'fixtures', 'json', '_parse_canceled.json')),
+          symbolize_names: true
+        )
+      end
+
+      it 'puts canceled in the time field' do
+        expect(output).to eq(expected)
+      end
+    end
+
     context 'when the train status is unavailable' do
       let(:document) do
         File.read(File.join('spec', 'fixtures', 'json', 'unavailable.json'))

@@ -1,0 +1,236 @@
+[
+  {
+    "number": 2153,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 6:06 am",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 6:36 am",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 95,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 6:10 am",
+      "estimated_time": null
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 6:43 am",
+      "estimated_time": null
+    }
+  },
+  {
+    "number": 2155,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 7:20 am",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 7:49 am",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 171,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 8:16 am",
+      "estimated_time": " 8:16 am"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 8:49 am",
+      "estimated_time": " 8:49 am"
+    }
+  },
+  {
+    "number": 2159,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 9:05 am",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 9:34 am",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 93,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 9:32 am",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": "10:07 am",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 2163,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": "11:06 am",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": "11:39 am",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 173,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": "11:11 am",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": "12:00 pm",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 2165,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": "12:11 pm",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": "12:40 pm",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 2167,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 1:06 pm",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 1:34 pm",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 137,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 1:36 pm",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 2:10 pm",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 2171,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 3:11 pm",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 3:42 pm",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 175,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 3:21 pm",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 3:54 pm",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 2173,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 4:16 pm",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 4:46 pm",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 2175,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 5:26 pm",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 5:53 pm",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 177,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 5:40 pm",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 6:14 pm",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 179,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 6:51 pm",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": " 7:23 pm",
+      "estimated_time": "Canceled"
+    }
+  },
+  {
+    "number": 67,
+    "departure": {
+      "date": "2018-03-21",
+      "scheduled_time": " 9:36 pm",
+      "estimated_time": "Canceled"
+    },
+    "arrival": {
+      "date": "2018-03-21",
+      "scheduled_time": "10:19 pm",
+      "estimated_time": "Canceled"
+    }
+  }
+]

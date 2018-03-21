@@ -35,11 +35,12 @@ module Amtrak
       date, scheduled_time = segment['originScheduledDepartureDateTime'].split('T')
       estimated_depart = segment['originEstimatedDepartureDateTime']
       _, estimated_time = estimated_depart.split('T') if estimated_depart
+      status = segment['originStatusComment']
 
       {
         date: date,
         scheduled_time: format_time(scheduled_time),
-        estimated_time: format_time(estimated_time)
+        estimated_time: or_cancelled(format_time(estimated_time), status)
       }
     end
 
@@ -47,15 +48,24 @@ module Amtrak
       date, scheduled_time = segment['destinationScheduledArrivalDateTime'].split('T')
       estimated_arrival = segment['destinationEstimatedArrivalDateTime']
       _, estimated_time = estimated_arrival.split('T') if estimated_arrival
+      status = segment['destinationStatusComment']
 
       {
         date: date,
         scheduled_time: format_time(scheduled_time),
-        estimated_time: format_time(estimated_time)
+        estimated_time: or_cancelled(format_time(estimated_time), status)
       }
     end
 
     private
+
+    def or_cancelled(time, status)
+      if status == 'Canceled'
+        'Canceled'
+      else
+        time
+      end
+    end
 
     def format_time(time)
       return unless time
